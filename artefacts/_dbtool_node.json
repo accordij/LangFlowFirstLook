@@ -1,0 +1,151 @@
+{
+  "data": {
+    "id": "CreditSnapshotDBToolPlayground-1",
+    "node": {
+      "base_classes": [
+        "Message"
+      ],
+      "beta": false,
+      "conditional_paths": [],
+      "custom_fields": {},
+      "description": "Standalone playground for validating JSON and writing snapshot rows to SQLite.",
+      "display_name": "Credit Snapshot DB Tool Playground",
+      "documentation": "",
+      "edited": false,
+      "field_order": [
+        "record_json",
+        "snapshot_id",
+        "database_url"
+      ],
+      "frozen": false,
+      "icon": "database",
+      "legacy": false,
+      "metadata": {},
+      "minimized": false,
+      "output_types": [],
+      "outputs": [
+        {
+          "allows_loop": false,
+          "cache": true,
+          "display_name": "Result Message",
+          "group_outputs": false,
+          "method": "run_test",
+          "name": "result_message",
+          "selected": "Message",
+          "tool_mode": false,
+          "types": [
+            "Message"
+          ],
+          "value": "__UNDEFINED__"
+        }
+      ],
+      "pinned": false,
+      "template": {
+        "_type": "Component",
+        "code": {
+          "advanced": true,
+          "dynamic": true,
+          "fileTypes": [],
+          "file_path": "",
+          "info": "",
+          "list": false,
+          "load_from_db": false,
+          "multiline": true,
+          "name": "code",
+          "password": false,
+          "placeholder": "",
+          "required": true,
+          "show": true,
+          "title_case": false,
+          "type": "code",
+          "value": "from __future__ import annotations\n\nimport json\nimport sqlite3\nimport uuid\nfrom datetime import datetime, timezone\nfrom pathlib import Path\nfrom typing import Any\n\nfrom langflow.custom import Component\nfrom langflow.io import MessageTextInput, Output\nfrom langflow.schema.message import Message\n\n\nclass CreditSnapshotDBToolPlayground(Component):\n    display_name = \"Credit Snapshot DB Tool Playground\"\n    description = \"Standalone playground for validating JSON and writing snapshot rows to SQLite.\"\n    icon = \"database\"\n    name = \"CreditSnapshotDBToolPlayground\"\n\n    inputs = [\n        MessageTextInput(\n            name=\"record_json\",\n            display_name=\"Record JSON\",\n            info=\"Structured JSON produced by the LLM.\",\n            required=True,\n        ),\n        MessageTextInput(\n            name=\"snapshot_id\",\n            display_name=\"Snapshot ID\",\n            info=\"Optional snapshot ID. If empty, tool generates UUID.\",\n            required=False,\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"database_url\",\n            display_name=\"Database URL\",\n            info=\"SQLite URL like sqlite:////tmp/credit_products.db\",\n            value=\"sqlite:////tmp/credit_products.db\",\n            required=True,\n            advanced=True,\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"Result Message\", name=\"result_message\", method=\"run_test\"),\n    ]\n\n    def run_test(self) -> Message:\n        payload = self._save_credit_snapshot()\n        text = json.dumps(payload, ensure_ascii=False, indent=2)\n        self.status = payload\n        return Message(text=text)\n\n    def _save_credit_snapshot(self) -> dict[str, Any]:\n        text = (self.record_json or \"\").strip()\n        if not text:\n            return self._result(\"invalid_json\", errors=[\"record_json is empty\"], inserted_rows=0)\n\n        try:\n            payload = json.loads(text)\n        except Exception as exc:  # noqa: BLE001\n            return self._result(\"invalid_json\", errors=[f\"JSON parse error: {exc}\"], inserted_rows=0)\n\n        validation_errors = self._validate_payload(payload)\n        if validation_errors:\n            return self._result(\"invalid_json\", errors=validation_errors, inserted_rows=0)\n\n        run_summary = payload.get(\"run_summary\") or {}\n        banks = payload.get(\"banks\") or []\n        resolved_snapshot_id = (self.snapshot_id or \"\").strip() or str(uuid.uuid4())\n\n        try:\n            db_path = self._sqlite_path(self.database_url)\n            inserted = self._write_rows(db_path, resolved_snapshot_id, run_summary, banks)\n        except Exception as exc:  # noqa: BLE001\n            return self._result(\"error\", snapshot_id=resolved_snapshot_id, errors=[str(exc)], inserted_rows=0)\n\n        return self._result(\"ok\", snapshot_id=resolved_snapshot_id, inserted_rows=inserted)\n\n    def _validate_payload(self, payload: dict[str, Any]) -> list[str]:\n        errors: list[str] = []\n        if not isinstance(payload, dict):\n            return [\"Top-level JSON must be an object\"]\n\n        for key in [\"run_summary\", \"banks\", \"comparison\"]:\n            if key not in payload:\n                errors.append(f\"Missing top-level key: {key}\")\n\n        banks = payload.get(\"banks\")\n        if not isinstance(banks, list) or len(banks) == 0:\n            errors.append(\"banks must be a non-empty array\")\n            return errors\n\n        required_bank_fields = [\"bank\", \"source_url\", \"confidence\"]\n        for idx, item in enumerate(banks):\n            if not isinstance(item, dict):\n                errors.append(f\"banks[{idx}] must be an object\")\n                continue\n            for field in required_bank_fields:\n                value = item.get(field)\n                if value is None or (isinstance(value, str) and not value.strip()):\n                    errors.append(f\"banks[{idx}].{field} is required\")\n        return errors\n\n    def _sqlite_path(self, url: str) -> Path:\n        raw = (url or \"\").strip()\n        if raw.startswith(\"sqlite:///\"):\n            return Path(raw.replace(\"sqlite:///\", \"\", 1))\n        return Path(raw)\n\n    def _write_rows(self, db_path: Path, snapshot_id: str, run_summary: dict[str, Any], banks: list[dict[str, Any]]) -> int:\n        db_path.parent.mkdir(parents=True, exist_ok=True)\n        now_iso = datetime.now(timezone.utc).isoformat()\n\n        with sqlite3.connect(db_path) as conn:\n            conn.execute(\n                \"\"\"\n                CREATE TABLE IF NOT EXISTS credit_product_snapshots (\n                    id INTEGER PRIMARY KEY AUTOINCREMENT,\n                    snapshot_id TEXT NOT NULL,\n                    topic TEXT,\n                    generated_at TEXT,\n                    bank TEXT,\n                    product TEXT,\n                    rate TEXT,\n                    apr_psk TEXT,\n                    max_amount TEXT,\n                    term TEXT,\n                    special_conditions TEXT,\n                    source_url TEXT,\n                    confidence TEXT,\n                    missing_fields TEXT,\n                    raw_record TEXT,\n                    created_at TEXT NOT NULL\n                );\n                \"\"\"\n            )\n\n            rows = []\n            for item in banks:\n                rows.append(\n                    (\n                        snapshot_id,\n                        str(run_summary.get(\"topic\") or \"\"),\n                        str(run_summary.get(\"generated_at\") or \"\"),\n                        str(item.get(\"bank\") or \"\"),\n                        str(item.get(\"product\") or \"\"),\n                        json.dumps(item.get(\"rate\"), ensure_ascii=False),\n                        json.dumps(item.get(\"apr_psk\"), ensure_ascii=False),\n                        json.dumps(item.get(\"max_amount\"), ensure_ascii=False),\n                        json.dumps(item.get(\"term\"), ensure_ascii=False),\n                        json.dumps(item.get(\"special_conditions\"), ensure_ascii=False),\n                        str(item.get(\"source_url\") or \"\"),\n                        str(item.get(\"confidence\") or \"\"),\n                        json.dumps(item.get(\"missing_fields\"), ensure_ascii=False),\n                        json.dumps(item, ensure_ascii=False),\n                        now_iso,\n                    )\n                )\n\n            conn.executemany(\n                \"\"\"\n                INSERT INTO credit_product_snapshots (\n                    snapshot_id, topic, generated_at, bank, product, rate, apr_psk, max_amount,\n                    term, special_conditions, source_url, confidence, missing_fields, raw_record, created_at\n                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);\n                \"\"\",\n                rows,\n            )\n            conn.commit()\n\n        return len(rows)\n\n    def _result(\n        self,\n        status: str,\n        snapshot_id: str | None = None,\n        inserted_rows: int = 0,\n        errors: list[str] | None = None,\n    ) -> dict[str, Any]:\n        return {\n            \"status\": status,\n            \"snapshot_id\": snapshot_id,\n            \"inserted_rows\": inserted_rows,\n            \"errors\": errors or [],\n        }\n"
+        },
+        "database_url": {
+          "_input_type": "MessageTextInput",
+          "advanced": true,
+          "display_name": "Database URL",
+          "dynamic": false,
+          "info": "SQLite URL like sqlite:////tmp/credit_products.db",
+          "input_types": [
+            "Message"
+          ],
+          "list": false,
+          "list_add_label": "Add More",
+          "load_from_db": false,
+          "name": "database_url",
+          "placeholder": "",
+          "required": true,
+          "show": true,
+          "title_case": false,
+          "tool_mode": false,
+          "trace_as_input": true,
+          "trace_as_metadata": true,
+          "type": "str",
+          "value": "sqlite:////tmp/credit_products.db"
+        },
+        "record_json": {
+          "_input_type": "MessageTextInput",
+          "advanced": false,
+          "display_name": "Record JSON",
+          "dynamic": false,
+          "info": "Structured JSON produced by the LLM.",
+          "input_types": [
+            "Message"
+          ],
+          "list": false,
+          "list_add_label": "Add More",
+          "load_from_db": false,
+          "name": "record_json",
+          "placeholder": "",
+          "required": true,
+          "show": true,
+          "title_case": false,
+          "tool_mode": false,
+          "trace_as_input": true,
+          "trace_as_metadata": true,
+          "type": "str",
+          "value": "{\"run_summary\":{\"topic\":\"demo\",\"generated_at\":\"2026-04-13T00:00:00Z\"},\"banks\":[{\"bank\":\"Сбер\",\"product\":\"Потребительский\",\"rate\":\"от 10%\",\"apr_psk\":\"11%\",\"max_amount\":\"5000000\",\"term\":\"60 мес\",\"special_conditions\":[],\"source_url\":\"https://example.org/sber\",\"confidence\":\"medium\",\"missing_fields\":[]}],\"comparison\":{\"best_rate_hint\":\"demo\",\"notes\":[]}}"
+        },
+        "snapshot_id": {
+          "_input_type": "MessageTextInput",
+          "advanced": true,
+          "display_name": "Snapshot ID",
+          "dynamic": false,
+          "info": "Optional snapshot ID. If empty, tool generates UUID.",
+          "input_types": [
+            "Message"
+          ],
+          "list": false,
+          "list_add_label": "Add More",
+          "load_from_db": false,
+          "name": "snapshot_id",
+          "placeholder": "",
+          "required": false,
+          "show": true,
+          "title_case": false,
+          "tool_mode": false,
+          "trace_as_input": true,
+          "trace_as_metadata": true,
+          "type": "str",
+          "value": ""
+        }
+      },
+      "tool_mode": false,
+      "name": "CreditSnapshotDBToolPlayground"
+    },
+    "showNode": true,
+    "type": "CreditSnapshotDBToolPlayground"
+  },
+  "dragging": false,
+  "id": "CreditSnapshotDBToolPlayground-1",
+  "measured": {
+    "height": 280,
+    "width": 320
+  },
+  "position": {
+    "x": -110,
+    "y": 860
+  },
+  "selected": false,
+  "type": "genericNode"
+}
