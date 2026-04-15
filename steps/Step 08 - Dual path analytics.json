@@ -1,0 +1,2707 @@
+{
+  "data": {
+    "edges": [
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "ChatInput",
+            "id": "ChatInput-u8Dnv",
+            "name": "message",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_value",
+            "id": "GigaChatAgent-1f0k5",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "reactflow__edge-ChatInput-u8Dnv{œdataTypeœ:œChatInputœ,œidœ:œChatInput-u8Dnvœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-GigaChatAgent-1f0k5{œfieldNameœ:œinput_valueœ,œidœ:œGigaChatAgent-1f0k5œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "ChatInput-u8Dnv",
+        "sourceHandle": "{œdataTypeœ:œChatInputœ,œidœ:œChatInput-u8Dnvœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "GigaChatAgent-1f0k5",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œGigaChatAgent-1f0k5œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "SearchPlugin",
+            "id": "SearchPlugin-jY2pr",
+            "name": "component_as_tool",
+            "output_types": [
+              "Tool"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "tools",
+            "id": "GigaChatAgent-1f0k5",
+            "inputTypes": [
+              "Tool"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "reactflow__edge-SearchPlugin-jY2pr{œdataTypeœ:œSearchPluginœ,œidœ:œSearchPlugin-jY2prœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}-GigaChatAgent-1f0k5{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-1f0k5œ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "SearchPlugin-jY2pr",
+        "sourceHandle": "{œdataTypeœ:œSearchPluginœ,œidœ:œSearchPlugin-jY2prœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}",
+        "target": "GigaChatAgent-1f0k5",
+        "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-1f0k5œ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "CreditSnapshotDBTool",
+            "id": "CreditSnapshotDBTool-FOohD",
+            "name": "component_as_tool",
+            "output_types": [
+              "Tool"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "tools",
+            "id": "GigaChatAgent-1f0k5",
+            "inputTypes": [
+              "Tool"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "reactflow__edge-CreditSnapshotDBTool-FOohD{œdataTypeœ:œCreditSnapshotDBToolœ,œidœ:œCreditSnapshotDBTool-FOohDœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}-GigaChatAgent-1f0k5{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-1f0k5œ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "CreditSnapshotDBTool-FOohD",
+        "sourceHandle": "{œdataTypeœ:œCreditSnapshotDBToolœ,œidœ:œCreditSnapshotDBTool-FOohDœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}",
+        "target": "GigaChatAgent-1f0k5",
+        "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-1f0k5œ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "GigaChatAgent",
+            "id": "GigaChatAgent-1f0k5",
+            "name": "response",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_value",
+            "id": "ChatOutput-IaTFt",
+            "inputTypes": [
+              "Data",
+              "DataFrame",
+              "Message"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "reactflow__edge-GigaChatAgent-1f0k5{œdataTypeœ:œGigaChatAgentœ,œidœ:œGigaChatAgent-1f0k5œ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}-ChatOutput-IaTFt{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-IaTFtœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "GigaChatAgent-1f0k5",
+        "sourceHandle": "{œdataTypeœ:œGigaChatAgentœ,œidœ:œGigaChatAgent-1f0k5œ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "ChatOutput-IaTFt",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-IaTFtœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "CreditMarketAnalyticsTool",
+            "id": "CreditMarketAnalyticsTool-MuKnb",
+            "name": "component_as_tool",
+            "output_types": [
+              "Tool"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "tools",
+            "id": "GigaChatAgent-1f0k5",
+            "inputTypes": [
+              "Tool"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "reactflow__edge-CreditMarketAnalyticsTool-MuKnb{œdataTypeœ:œCreditMarketAnalyticsToolœ,œidœ:œCreditMarketAnalyticsTool-MuKnbœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}-GigaChatAgent-1f0k5{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-1f0k5œ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "CreditMarketAnalyticsTool-MuKnb",
+        "sourceHandle": "{œdataTypeœ:œCreditMarketAnalyticsToolœ,œidœ:œCreditMarketAnalyticsTool-MuKnbœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}",
+        "target": "GigaChatAgent-1f0k5",
+        "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-1f0k5œ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "SQLComponent",
+            "id": "SQLComponent-K1pfc",
+            "name": "component_as_tool",
+            "output_types": [
+              "Tool"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "tools",
+            "id": "GigaChatAgent-1f0k5",
+            "inputTypes": [
+              "Tool"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__SQLComponent-K1pfc{œdataTypeœ:œSQLComponentœ,œidœ:œSQLComponent-K1pfcœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}-GigaChatAgent-1f0k5{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-1f0k5œ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "SQLComponent-K1pfc",
+        "sourceHandle": "{œdataTypeœ:œSQLComponentœ,œidœ:œSQLComponent-K1pfcœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}",
+        "target": "GigaChatAgent-1f0k5",
+        "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-1f0k5œ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "id": "ChatInput-u8Dnv",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Get chat inputs from the Playground.",
+            "display_name": "Chat Input",
+            "documentation": "https://docs.langflow.org/components-io#chat-input",
+            "edited": false,
+            "field_order": [
+              "input_value",
+              "should_store_message",
+              "sender",
+              "sender_name",
+              "session_id",
+              "files",
+              "background_color",
+              "chat_icon",
+              "text_color"
+            ],
+            "frozen": false,
+            "icon": "MessagesSquare",
+            "legacy": false,
+            "lf_version": "1.5.0.post1",
+            "metadata": {},
+            "minimized": true,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Chat Message",
+                "group_outputs": false,
+                "method": "message_response",
+                "name": "message",
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "background_color": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Background Color",
+                "dynamic": false,
+                "info": "The background color of the icon.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "background_color",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "chat_icon": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Icon",
+                "dynamic": false,
+                "info": "The icon of the message.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "chat_icon",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from langflow.base.data.utils import IMG_FILE_TYPES, TEXT_FILE_TYPES\nfrom langflow.base.io.chat import ChatComponent\nfrom langflow.inputs.inputs import BoolInput\nfrom langflow.io import (\n    DropdownInput,\n    FileInput,\n    MessageTextInput,\n    MultilineInput,\n    Output,\n)\nfrom langflow.schema.message import Message\nfrom langflow.utils.constants import (\n    MESSAGE_SENDER_AI,\n    MESSAGE_SENDER_NAME_USER,\n    MESSAGE_SENDER_USER,\n)\n\n\nclass ChatInput(ChatComponent):\n    display_name = \"Chat Input\"\n    description = \"Get chat inputs from the Playground.\"\n    documentation: str = \"https://docs.langflow.org/components-io#chat-input\"\n    icon = \"MessagesSquare\"\n    name = \"ChatInput\"\n    minimized = True\n\n    inputs = [\n        MultilineInput(\n            name=\"input_value\",\n            display_name=\"Input Text\",\n            value=\"\",\n            info=\"Message to be passed as input.\",\n        ),\n        BoolInput(\n            name=\"should_store_message\",\n            display_name=\"Store Messages\",\n            info=\"Store the message in the history.\",\n            value=True,\n            advanced=True,\n        ),\n        DropdownInput(\n            name=\"sender\",\n            display_name=\"Sender Type\",\n            options=[MESSAGE_SENDER_AI, MESSAGE_SENDER_USER],\n            value=MESSAGE_SENDER_USER,\n            info=\"Type of sender.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"sender_name\",\n            display_name=\"Sender Name\",\n            info=\"Name of the sender.\",\n            value=MESSAGE_SENDER_NAME_USER,\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"session_id\",\n            display_name=\"Session ID\",\n            info=\"The session ID of the chat. If empty, the current session ID parameter will be used.\",\n            advanced=True,\n        ),\n        FileInput(\n            name=\"files\",\n            display_name=\"Files\",\n            file_types=TEXT_FILE_TYPES + IMG_FILE_TYPES,\n            info=\"Files to be sent with the message.\",\n            advanced=True,\n            is_list=True,\n            temp_file=True,\n        ),\n        MessageTextInput(\n            name=\"background_color\",\n            display_name=\"Background Color\",\n            info=\"The background color of the icon.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"chat_icon\",\n            display_name=\"Icon\",\n            info=\"The icon of the message.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"text_color\",\n            display_name=\"Text Color\",\n            info=\"The text color of the name\",\n            advanced=True,\n        ),\n    ]\n    outputs = [\n        Output(display_name=\"Chat Message\", name=\"message\", method=\"message_response\"),\n    ]\n\n    async def message_response(self) -> Message:\n        background_color = self.background_color\n        text_color = self.text_color\n        icon = self.chat_icon\n\n        message = await Message.create(\n            text=self.input_value,\n            sender=self.sender,\n            sender_name=self.sender_name,\n            session_id=self.session_id,\n            files=self.files,\n            properties={\n                \"background_color\": background_color,\n                \"text_color\": text_color,\n                \"icon\": icon,\n            },\n        )\n        if self.session_id and isinstance(message, Message) and self.should_store_message:\n            stored_message = await self.send_message(\n                message,\n            )\n            self.message.value = stored_message\n            message = stored_message\n\n        self.status = message\n        return message\n"
+              },
+              "files": {
+                "_input_type": "FileInput",
+                "advanced": true,
+                "display_name": "Files",
+                "dynamic": false,
+                "fileTypes": [
+                  "txt",
+                  "md",
+                  "mdx",
+                  "csv",
+                  "json",
+                  "yaml",
+                  "yml",
+                  "xml",
+                  "html",
+                  "htm",
+                  "pdf",
+                  "docx",
+                  "py",
+                  "sh",
+                  "sql",
+                  "js",
+                  "ts",
+                  "tsx",
+                  "jpg",
+                  "jpeg",
+                  "png",
+                  "bmp",
+                  "image"
+                ],
+                "file_path": "",
+                "info": "Files to be sent with the message.",
+                "list": true,
+                "list_add_label": "Add More",
+                "name": "files",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "temp_file": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "file",
+                "value": ""
+              },
+              "input_value": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "copy_field": false,
+                "display_name": "Input Text",
+                "dynamic": false,
+                "info": "Message to be passed as input.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "input_value",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Собери и сравни ключевые условия потребительского кредита наличными у Сбера, ВТБ, Т-Банка и Альфа-Банка. Верни строго JSON в согласованной структуре."
+              },
+              "sender": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Sender Type",
+                "dynamic": false,
+                "info": "Type of sender.",
+                "name": "sender",
+                "options": [
+                  "Machine",
+                  "User"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "User"
+              },
+              "sender_name": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Sender Name",
+                "dynamic": false,
+                "info": "Name of the sender.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "sender_name",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "User"
+              },
+              "session_id": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Session ID",
+                "dynamic": false,
+                "info": "The session ID of the chat. If empty, the current session ID parameter will be used.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "session_id",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "should_store_message": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Store Messages",
+                "dynamic": false,
+                "info": "Store the message in the history.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "should_store_message",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
+              "text_color": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Text Color",
+                "dynamic": false,
+                "info": "The text color of the name",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "text_color",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "ChatInput"
+        },
+        "dragging": false,
+        "id": "ChatInput-u8Dnv",
+        "measured": {
+          "height": 208,
+          "width": 320
+        },
+        "position": {
+          "x": -601.640464578619,
+          "y": -83.77045189072811
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "description": "Define the agent's instructions, then enter a task to complete using tools.",
+          "display_name": "GigaChat Agent",
+          "id": "GigaChatAgent-1f0k5",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Define the agent's instructions, then enter a task to complete using tools.",
+            "display_name": "GigaChat Agent",
+            "documentation": "",
+            "edited": false,
+            "field_order": [
+              "credentials",
+              "access_token",
+              "scope",
+              "max_tokens",
+              "model",
+              "auth_url",
+              "base_url",
+              "user",
+              "password",
+              "use_certificate",
+              "certificates",
+              "ca_bundle_file",
+              "cert_file",
+              "key_file",
+              "key_file_password",
+              "timeout",
+              "profanity_check",
+              "temperature",
+              "top_p",
+              "auth_url",
+              "base_url",
+              "use_certificate",
+              "certificates",
+              "system_prompt",
+              "tools",
+              "input_value",
+              "handle_parsing_errors",
+              "verbose",
+              "max_iterations",
+              "agent_description",
+              "mode",
+              "message",
+              "memory",
+              "sender_type",
+              "sender",
+              "sender_name",
+              "n_messages",
+              "session_id",
+              "order",
+              "template",
+              "add_current_date_tool",
+              "stream",
+              "verbose"
+            ],
+            "frozen": false,
+            "icon": "GigaChatViolet",
+            "legacy": false,
+            "lf_version": "1.5.0.post1",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Response",
+                "group_outputs": false,
+                "method": "message_response",
+                "name": "response",
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "access_token": {
+                "_input_type": "SecretStrInput",
+                "advanced": true,
+                "display_name": "Access Token",
+                "dynamic": false,
+                "info": "Авторизация с временным токеном.",
+                "input_types": [],
+                "load_from_db": false,
+                "name": "access_token",
+                "password": true,
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": ""
+              },
+              "add_current_date_tool": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Current Date",
+                "dynamic": false,
+                "info": "If true, will add a tool to the agent that returns the current date.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "add_current_date_tool",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
+              "agent_description": {
+                "_input_type": "MultilineInput",
+                "advanced": true,
+                "copy_field": false,
+                "display_name": "Agent Description [Deprecated]",
+                "dynamic": false,
+                "info": "The description of the agent. This is only used when in Tool Mode. Defaults to 'A helpful assistant with access to the following tools:' and tools are added dynamically. This feature is deprecated and will be removed in future versions.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "agent_description",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "A helpful assistant with access to the following tools:"
+              },
+              "auth_url": {
+                "_input_type": "SecretStrInput",
+                "advanced": true,
+                "display_name": "GigaChat Auth URL",
+                "dynamic": false,
+                "info": "Базовый API GigaChatПо умолчанию https://gigachat.devices.sberbank.ru/api/v1.",
+                "input_types": [],
+                "load_from_db": false,
+                "name": "auth_url",
+                "password": true,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": ""
+              },
+              "base_url": {
+                "_input_type": "SecretStrInput",
+                "advanced": true,
+                "display_name": "GigaChat Base URL",
+                "dynamic": false,
+                "info": "Базовый API GigaChatПо умолчанию https://gigachat.devices.sberbank.ru/api/v1.",
+                "input_types": [],
+                "load_from_db": false,
+                "name": "base_url",
+                "password": true,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": ""
+              },
+              "ca_bundle_file": {
+                "_input_type": "SecretStrInput",
+                "advanced": true,
+                "display_name": "CA bundle file",
+                "dynamic": false,
+                "info": "Путь к файлу CA цепочки сертификатов. Например certs/ca.pem # chain_pem.txt",
+                "input_types": [],
+                "load_from_db": false,
+                "name": "ca_bundle_file",
+                "password": true,
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": ""
+              },
+              "cert_file": {
+                "_input_type": "SecretStrInput",
+                "advanced": true,
+                "display_name": "Cert file",
+                "dynamic": false,
+                "info": "Путь к файлу с публичной частью сертификата. Например certs/tls.pem # published_pem.txt",
+                "input_types": [],
+                "load_from_db": false,
+                "name": "cert_file",
+                "password": true,
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": ""
+              },
+              "certificates": {
+                "_input_type": "CertificateInput",
+                "_type": "CertificateInput",
+                "advanced": false,
+                "display_name": "Certificates",
+                "dynamic": false,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "SSL/TLS certificates configurations",
+                "input_types": [
+                  "Certificate"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "certificates",
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "temp_file": false,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "certificate",
+                "value": "",
+                "verify_peer": true
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from typing import Any, Optional\n\nfrom langchain_core.tools import StructuredTool\nfrom langflow.base.agents.agent import LCToolsAgentComponent\nfrom langflow.base.agents.events import ExceptionWithMessageError\nfrom langflow.base.constants import STREAM_INFO_TEXT\nfrom langflow.base.models.model_input_constants import get_filtered_inputs\nfrom langflow.base.models.model_utils import get_model_name\nfrom langflow.components.helpers import CurrentDateComponent\nfrom langflow.components.helpers.memory import MemoryComponent\nfrom langflow.components.langchain_utilities.tool_calling import ToolCallingAgentComponent\nfrom langflow.inputs import SecretStrInput\nfrom langflow.io import BoolInput, MultilineInput, Output\nfrom langflow.logging import logger\nfrom langflow.schema.dotdict import dotdict\nfrom langflow.schema.message import Message\n\nfrom langflow_patch.backend.components.gigachat.model import GigaChatModelComponent\nfrom langflow_patch.backend.patchs.patch_inputs_and_io import CertificateInput\n\n\ndef set_advanced_true(component_input):\n    component_input.advanced = True\n    return component_input\n\n\nclass GigaChatAgentComponent(ToolCallingAgentComponent):\n    display_name: str = \"GigaChat Agent\"\n    description: str = \"Define the agent's instructions, then enter a task to complete using tools.\"\n    icon = \"GigaChatViolet\"\n    beta = False\n    name = \"GigaChatAgent\"\n\n    memory_inputs = [set_advanced_true(component_input) for component_input in MemoryComponent().inputs]\n    gigachat_inputs = get_filtered_inputs(GigaChatModelComponent)\n\n    inputs = [\n        *gigachat_inputs,\n        SecretStrInput(\n            name=\"auth_url\",\n            display_name=\"GigaChat Auth URL\",\n            advanced=True,\n            info=\"Базовый API GigaChatПо умолчанию https://gigachat.devices.sberbank.ru/api/v1.\",\n            # value=\"GIGACHAT_AUTH_URL\",\n        ),\n        SecretStrInput(\n            name=\"base_url\",\n            display_name=\"GigaChat Base URL\",\n            advanced=True,\n            info=\"Базовый API GigaChatПо умолчанию https://gigachat.devices.sberbank.ru/api/v1.\",\n            value=\"GIGACHAT_BASE_URL\",\n        ),\n        BoolInput(\n            name=\"use_certificate\",\n            display_name=\"Use Certificate\",\n            value=False,\n            info=\"Использовать ли клиенскую проверку серверного сертификата\",\n            real_time_refresh=True,\n            advanced=True,\n        ),\n        CertificateInput(\n            name=\"certificates\",\n            display_name=\"Certificates\",\n            info=\"SSL/TLS certificates configurations\",\n            show=False,\n        ),\n        MultilineInput(\n            name=\"system_prompt\",\n            display_name=\"Agent Instructions\",\n            info=\"System Prompt: Initial instructions and context provided to guide the agent's behavior.\",\n            value=\"You are a helpful assistant that can use tools to answer questions and perform tasks.\",\n            advanced=False,\n        ),\n        *LCToolsAgentComponent._base_inputs,\n        *memory_inputs,\n        BoolInput(\n            name=\"add_current_date_tool\",\n            display_name=\"Current Date\",\n            advanced=True,\n            info=\"If true, will add a tool to the agent that returns the current date.\",\n            value=True,\n        ),\n        BoolInput(\n            name=\"stream\",\n            display_name=\"Streaming\",\n            info=STREAM_INFO_TEXT,\n            advanced=True,\n            value=False,\n        ),\n        BoolInput(name=\"verbose\", display_name=\"Verbose\", value=False, advanced=True),\n    ]\n    outputs = [Output(name=\"response\", display_name=\"Response\", method=\"message_response\")]\n\n    def update_build_config(self, build_config: dotdict, field_value: Any, field_name: Optional[str] = None):\n        if field_name == \"use_certificate\":\n            build_config[\"certificates\"][\"show\"] = field_value\n\n        return build_config\n\n    async def message_response(self) -> Message:\n        try:\n            # Get LLM model and validate\n            llm_model, display_name = self.get_llm()\n            if llm_model is None:\n                msg = \"No language model selected. Please choose a model to proceed.\"\n                raise ValueError(msg)\n            self.model_name = get_model_name(llm_model, display_name=display_name)\n\n            # Get memory data\n            self.chat_history = await self.get_memory_data()\n\n            # Add current date tool if enabled\n            if self.add_current_date_tool:\n                if not isinstance(self.tools, list):  # type: ignore[has-type]\n                    self.tools = []\n                current_date_tool = (await CurrentDateComponent(**self.get_base_args()).to_toolkit()).pop(0)\n                if not isinstance(current_date_tool, StructuredTool):\n                    msg = \"CurrentDateComponent must be converted to a StructuredTool\"\n                    raise TypeError(msg)\n                self.tools.append(current_date_tool)\n\n            # Validate tools\n            if not self.tools:\n                msg = \"Tools are required to run the agent. Please add at least one tool.\"\n                raise ValueError(msg)\n\n            # Set up and run agent\n            self.set(\n                llm=llm_model,\n                tools=self.tools,\n                chat_history=self.chat_history,\n                input_value=self.input_value,\n                system_prompt=self.system_prompt,\n            )\n            self.system_prompt = str(self.system_prompt).replace(\"{\", \"{{\").replace(\"}\", \"}}\")\n            agent = self.create_agent_runnable()\n            return await self.run_agent(agent)\n\n        except (ValueError, TypeError, KeyError) as e:\n            logger.error(f\"{type(e).__name__}: {e!s}\")\n            raise\n        except ExceptionWithMessageError as e:\n            logger.error(f\"ExceptionWithMessageError occurred: {e}\")\n            raise\n        except Exception as e:\n            logger.error(f\"Unexpected error: {e!s}\")\n            raise\n\n    async def get_memory_data(self):\n        memory_kwargs = {\n            component_input.name: getattr(self, f\"{component_input.name}\") for component_input in self.memory_inputs\n        }\n        # filter out empty values\n        memory_kwargs = {k: v for k, v in memory_kwargs.items() if v}\n\n        memory_data = await MemoryComponent(**self.get_base_args()).set(**memory_kwargs).retrieve_messages()\n        # exclude last message cause it equal to user input\n        return memory_data[1:]  # type:ignore\n\n    def get_llm(self):\n        try:\n            component_class = GigaChatModelComponent()\n            display_name = component_class.display_name\n            inputs = self.gigachat_inputs\n            return self._build_llm_model(component_class, inputs), display_name\n        except Exception as e:\n            msg = \"Error building GigaChat language model\"\n            raise ValueError(msg) from e\n\n    def _build_llm_model(self, component, inputs, prefix=\"\"):\n        model_kwargs = {input_.name: getattr(self, f\"{prefix}{input_.name}\") for input_ in inputs}\n        if self.use_certificate and self.certificates:\n            model_kwargs[\"ca_bundle_file\"] = self.certificates.get_file_ca_cert()\n            model_kwargs[\"cert_file\"] = self.certificates.get_file_cert()\n            model_kwargs[\"key_file\"] = self.certificates.get_file_key()\n\n        llm_model = component.set(**model_kwargs, stream=self.stream).build_model()\n        llm_model.disable_streaming = not (self.stream)\n        return llm_model\n"
+              },
+              "credentials": {
+                "_input_type": "SecretStrInput",
+                "advanced": true,
+                "display_name": "Credential Key",
+                "dynamic": false,
+                "info": "Ключ авторизации. Доступен в личном кабинете в разделе Авторизационные данные.",
+                "input_types": [],
+                "load_from_db": false,
+                "name": "credentials",
+                "password": true,
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": ""
+              },
+              "handle_parsing_errors": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Handle Parse Errors",
+                "dynamic": false,
+                "info": "Should the Agent fix errors when reading user input for better processing?",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "handle_parsing_errors",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
+              "input_value": {
+                "_input_type": "MessageInput",
+                "advanced": false,
+                "display_name": "Input",
+                "dynamic": false,
+                "info": "The input provided by the user for the agent to process.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "input_value",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "key_file": {
+                "_input_type": "SecretStrInput",
+                "advanced": true,
+                "display_name": "Key file",
+                "dynamic": false,
+                "info": "Путь к файл с публичной частью сертификата",
+                "input_types": [],
+                "load_from_db": false,
+                "name": "key_file",
+                "password": true,
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": ""
+              },
+              "key_file_password": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "Key file password",
+                "dynamic": false,
+                "info": "Пароль от файла с публичной частью ключа",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "key_file_password",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "max_iterations": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Max Iterations",
+                "dynamic": false,
+                "info": "The maximum number of attempts the agent can make to complete its task before it stops.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "max_iterations",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 15
+              },
+              "max_tokens": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Max tokens",
+                "dynamic": false,
+                "info": "Максимальное количество токенов для генерации. Установите значение 0 для неограниченного количества токенов.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "max_tokens",
+                "placeholder": "",
+                "range_spec": {
+                  "max": 200000,
+                  "min": 0,
+                  "step": 0.1,
+                  "step_type": "float"
+                },
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": ""
+              },
+              "memory": {
+                "_input_type": "HandleInput",
+                "advanced": true,
+                "display_name": "External Memory",
+                "dynamic": false,
+                "info": "Retrieve messages from an external memory. If empty, it will use the Langflow tables.",
+                "input_types": [
+                  "Memory"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "memory",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "message": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Message",
+                "dynamic": true,
+                "info": "The chat message to be stored.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "message",
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "mode": {
+                "_input_type": "TabInput",
+                "advanced": true,
+                "display_name": "Mode",
+                "dynamic": false,
+                "info": "Operation mode: Store messages or Retrieve messages.",
+                "name": "mode",
+                "options": [
+                  "Retrieve",
+                  "Store"
+                ],
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "tab",
+                "value": "Retrieve"
+              },
+              "model": {
+                "_input_type": "DropdownInput",
+                "advanced": false,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Model",
+                "dynamic": false,
+                "info": "",
+                "load_from_db": false,
+                "name": "model",
+                "options": [
+                  "GigaChat-2",
+                  "GigaChat-2-Pro",
+                  "GigaChat-2-Max"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "GigaChat-2-Pro"
+              },
+              "n_messages": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Number of Messages",
+                "dynamic": false,
+                "info": "Number of messages to retrieve.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "n_messages",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 100
+              },
+              "order": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Order",
+                "dynamic": false,
+                "info": "Order of the messages.",
+                "name": "order",
+                "options": [
+                  "Ascending",
+                  "Descending"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Ascending"
+              },
+              "password": {
+                "_input_type": "SecretStrInput",
+                "advanced": true,
+                "display_name": "Password",
+                "dynamic": false,
+                "info": "Пароль при авторизации через логин и пароль.",
+                "input_types": [],
+                "load_from_db": false,
+                "name": "password",
+                "password": true,
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": ""
+              },
+              "profanity_check": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Profanity check",
+                "dynamic": false,
+                "info": "Проверка на использование нецензурной лексики. ",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "profanity_check",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": false
+              },
+              "retry_attempts_count": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Max retry attempts",
+                "dynamic": false,
+                "info": "Максимальное количество попыток повторного запроса в случае ошибки",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "retry_attempts_count",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 3
+              },
+              "scope": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Scope",
+                "dynamic": false,
+                "info": "Выбор персонального или корпоративного пространстваGIGACHAT_API_PERS — версия API для физических лиц;GIGACHAT_API_B2B — доступ для ИП и юридических лиц по предоплате;GIGACHAT_API_CORP — доступ для ИП и юридических лиц по схеме pay-as-you-go.",
+                "name": "scope",
+                "options": [
+                  "GIGACHAT_API_PERS",
+                  "GIGACHAT_API_B2B",
+                  "GIGACHAT_API_CORP"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "GIGACHAT_API_CORP"
+              },
+              "sender": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Sender",
+                "dynamic": false,
+                "info": "The sender of the message. Might be Machine or User. If empty, the current sender parameter will be used.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "sender",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "sender_name": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Sender Name",
+                "dynamic": false,
+                "info": "Filter by sender name.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "sender_name",
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "sender_type": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Sender Type",
+                "dynamic": false,
+                "info": "Filter by sender type.",
+                "name": "sender_type",
+                "options": [
+                  "Machine",
+                  "User",
+                  "Machine and User"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Machine and User"
+              },
+              "session_id": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Session ID",
+                "dynamic": false,
+                "info": "The session ID of the chat. If empty, the current session ID parameter will be used.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "session_id",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "stream": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Streaming",
+                "dynamic": false,
+                "info": "Stream the response from the model. Streaming works only in Chat.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "stream",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": false
+              },
+              "system_prompt": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "copy_field": false,
+                "display_name": "Agent Instructions",
+                "dynamic": false,
+                "info": "System Prompt: Initial instructions and context provided to guide the agent's behavior.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "system_prompt",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Ты аналитик кредитного рынка РФ для учебной симуляции. У тебя есть 4 инструмента: веб-поиск, запись снапшота, SQL-доступ к таблице, и аналитическая tool. Для демонстрации сначала можешь сделать вывод ТОЛЬКО по сырым данным через run_sql_query, а потом (в том же диалоге по запросу пользователя) улучшить вывод с get_credit_market_analytics. Если пользователь просит сравнить режимы, верни 2 блока: RAW_SQL_VIEW и ANALYTICS_VIEW. В каждом выводе опирайся на факты из данных. Ничего не придумывай. Если используешь get_credit_market_analytics, процитируй минимум 3 facts из ответа tool.\\n\\nКонтекст прошлого шага:\\nТы аналитик кредитных продуктов российских банков. Твоя задача: собрать данные по Сбер, ВТБ, Т-Банк, Альфа-Банк и вернуть структурированный JSON. ВАЖНО: перед финальным ответом ОБЯЗАТЕЛЬНО вызови tool save_credit_snapshot и передай ей весь итоговый JSON в аргументе record_json. Если tool вернула статус invalid_json или error, исправь JSON и вызови tool повторно. После успешной записи (status=ok) верни финальный ответ СТРОГО в JSON без markdown и без дополнительного текста. Формат JSON: run_summary(topic, generated_at), banks[bank, product, rate, apr_psk, max_amount, term, special_conditions[], source_url, confidence, missing_fields[]], comparison(best_rate_hint, notes[]), db_write(status, snapshot_id, inserted_rows, errors[]). Если значения нет, ставь null или пустой массив."
+              },
+              "temperature": {
+                "_input_type": "SliderInput",
+                "advanced": true,
+                "display_name": "Temperature",
+                "dynamic": false,
+                "info": "",
+                "max_label": "",
+                "max_label_icon": "",
+                "min_label": "",
+                "min_label_icon": "",
+                "name": "temperature",
+                "placeholder": "",
+                "range_spec": {
+                  "max": 1,
+                  "min": 0,
+                  "step": 0.01,
+                  "step_type": "float"
+                },
+                "required": false,
+                "show": true,
+                "slider_buttons": false,
+                "slider_buttons_options": [],
+                "slider_input": false,
+                "title_case": false,
+                "tool_mode": false,
+                "type": "slider",
+                "value": 0.1
+              },
+              "template": {
+                "_input_type": "MultilineInput",
+                "advanced": true,
+                "copy_field": false,
+                "display_name": "Template",
+                "dynamic": false,
+                "info": "The template to use for formatting the data. It can contain the keys {text}, {sender} or any other key in the message data.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "template",
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "{sender_name}: {text}"
+              },
+              "timeout": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Timeout",
+                "dynamic": false,
+                "info": "Таймаут реквеста в секундах",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "timeout",
+                "placeholder": "",
+                "range_spec": {
+                  "max": 300,
+                  "min": 0,
+                  "step": 0.1,
+                  "step_type": "float"
+                },
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": ""
+              },
+              "tools": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Tools",
+                "dynamic": false,
+                "info": "These are the tools that the agent can use to help with tasks.",
+                "input_types": [
+                  "Tool"
+                ],
+                "list": true,
+                "list_add_label": "Add More",
+                "name": "tools",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "top_p": {
+                "_input_type": "FloatInput",
+                "advanced": true,
+                "display_name": "Top p",
+                "dynamic": false,
+                "info": "",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "top_p",
+                "placeholder": "",
+                "range_spec": {
+                  "max": 1,
+                  "min": 0,
+                  "step": 0.01,
+                  "step_type": "float"
+                },
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "float",
+                "value": 1
+              },
+              "use_certificate": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Use Certificate",
+                "dynamic": false,
+                "info": "Использовать ли клиенскую проверку серверного сертификата",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "use_certificate",
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": false
+              },
+              "user": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "User",
+                "dynamic": false,
+                "info": "Логин при авторизации через логин и пароль.",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "user",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "verbose": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Verbose",
+                "dynamic": false,
+                "info": "",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "verbose",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": false
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "GigaChatAgent"
+        },
+        "dragging": false,
+        "id": "GigaChatAgent-1f0k5",
+        "measured": {
+          "height": 448,
+          "width": 320
+        },
+        "position": {
+          "x": -117.97076734798168,
+          "y": -86.7024969404702
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "SearchPlugin-jY2pr",
+          "node": {
+            "base_classes": [
+              "Data"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Выполняет веб-поиск через Search Plugin и возвращает краткие выдержки со ссылками.",
+            "display_name": "Search Plugin",
+            "documentation": "",
+            "edited": false,
+            "field_order": [
+              "query",
+              "max_results",
+              "safe_search",
+              "domains",
+              "url",
+              "api_key",
+              "timeout"
+            ],
+            "frozen": false,
+            "icon": "Search",
+            "last_updated": "2026-04-15T12:58:29.701Z",
+            "legacy": false,
+            "lf_version": "1.5.0.post1",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Toolset",
+                "group_outputs": false,
+                "hidden": null,
+                "method": "to_toolkit",
+                "name": "component_as_tool",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Tool",
+                "tool_mode": true,
+                "types": [
+                  "Tool"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "api_key": {
+                "_input_type": "SecretStrInput",
+                "advanced": true,
+                "display_name": "Search Plugin API Key",
+                "dynamic": false,
+                "info": "API ключ Search Plugin",
+                "input_types": [],
+                "load_from_db": false,
+                "name": "api_key",
+                "password": true,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": ""
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "\"\"\"SearchPlugin-based web search component for LangFlow.\"\"\"\n\nfrom __future__ import annotations\n\nimport logging\nimport os\nimport uuid\nfrom typing import Iterable, List, Optional, Sequence\n\nimport httpx\nfrom langflow.custom import Component\nfrom langflow.io import BoolInput, IntInput, MessageTextInput, Output, SecretStrInput\nfrom langflow.schema import Data\n\nfrom agent_lab_sdk.metrics import get_metric\n\nlogger = logging.getLogger(__name__)\n\nSEARCH_PLUGIN_DEFAULT_URL = os.getenv(\"SEARCH_PLUGIN_URL\", \"https://gigachat.dev.app.sberdevices.ru/retrieval\")\nDEFAULT_MAX_RESULTS = int(os.getenv(\"SEARCH_PLUGIN_DEFAULT_MAX_RESULTS\", 6))\nCLIENT_TIMEOUT_SECONDS = int(os.getenv(\"SEARCH_PLUGIN_TIMEOUT_SECONDS\", 30))\n\nsearch_plugin_error_metric = get_metric(\n    \"gauge\",\n    \"search_plugin_errors_total\",\n    \"Количество ошибок Search Plugin (200 + error в response payload)\",\n)\nsearch_plugin_empty_payload_metric = get_metric(\n    \"gauge\",\n    \"search_plugin_empty_payload_total\",\n    \"Количество пустых ответов Search Plugin\",\n)\n\n\ndef _require_api_key(explicit_key: Optional[str] = None) -> str:\n    candidate = explicit_key\n    if candidate:\n        env_candidate = os.getenv(candidate)\n        if env_candidate:\n            candidate = env_candidate\n    api_key = candidate or os.getenv(\"SEARCH_PLUGIN_KEY\")\n    if not api_key:\n        raise RuntimeError(\n            \"SEARCH_PLUGIN_KEY не найден. Укажи ключ Search Plugin в переменной окружения или поле компонента.\"\n        )\n    return api_key\n\n\ndef _build_query(query: str, domains: Optional[Iterable[str]]) -> str:\n    query = (query or \"\").strip()\n    if not query:\n        return \"\"\n    if domains:\n        sanitized = [domain.strip() for domain in domains if domain and domain.strip()]\n        if sanitized:\n            query += \" site:\" + \" OR site:\".join(sanitized)\n    return query\n\n\ndef _format_documents(documents: List[dict], sources: dict) -> str:\n    if not documents:\n        return \"Search Plugin не нашёл результатов по запросу.\"\n\n    lines: List[str] = []\n    for index, doc in enumerate(documents, 1):\n        ref = str(doc.get(\"reference_keyword\"))\n        source = sources.get(ref, {}) if sources else {}\n        title = source.get(\"title\") or \"Без заголовка\"\n        url = source.get(\"url\") or \"\"\n        snippet = (doc.get(\"text\") or \"\")[:5000]\n        block = f\"{index}. {title}\\n{url}\\n{snippet}\".strip()\n        lines.append(block)\n    return \"\\n\\n\".join(lines)\n\n\ndef _parse_domains(raw_value: str | List[str] | None) -> Optional[List[str]]:\n    if not raw_value:\n        return None\n    if isinstance(raw_value, list):\n        candidates = raw_value\n    else:\n        normalized = raw_value.replace(\"\\n\", \",\")\n        candidates = [chunk.strip() for chunk in normalized.split(\",\")]\n    domains = [candidate for candidate in candidates if candidate]\n    return domains or None\n\n\ndef _normalize_domains(domains: Optional[str | Iterable[str]]) -> Optional[List[str]]:\n    if not domains:\n        return None\n    if isinstance(domains, str):\n        return _parse_domains(domains)\n    sanitized = [str(domain).strip() for domain in domains if domain and str(domain).strip()]\n    return sanitized or None\n\n\nclass SearchPluginComponent(Component):\n    \"\"\"\n    Компонент для выполнения веб-поиска с использованием Search Plugin.\n    \"\"\"\n    display_name = \"Search Plugin\"\n    description = \"Выполняет веб-поиск через Search Plugin и возвращает краткие выдержки со ссылками.\"\n    icon = \"Search\"\n    name = \"SearchPlugin\"\n\n    inputs = [\n        MessageTextInput(\n            name=\"query\",\n            display_name=\"Запрос\",\n            info=\"Поисковый запрос\",\n            required=True,\n            tool_mode=True,\n        ),\n        IntInput(\n            name=\"max_results\",\n            display_name=\"Максимум результатов\",\n            info=\"Количество документов в ответе\",\n            value=DEFAULT_MAX_RESULTS,\n            advanced=True,\n        ),\n        BoolInput(\n            name=\"safe_search\",\n            display_name=\"Safe Search\",\n            info=\"Использовать режим safe_search вместо actual_info_web_search\",\n            value=False,\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"domains\",\n            display_name=\"Домены\",\n            info=\"Список доменов через запятую или перенос строки, чтобы ограничить поиск\",\n            required=False,\n            advanced=True,\n        ),\n        SecretStrInput(\n            name=\"url\",\n            display_name=\"Search Plugin URL\",\n            info=\"Endpoint Search Plugin, по умолчанию https://${SEARCH_PLUGIN_HOST}/retrieval\",\n            value=\"SEARCH_PLUGIN_URL\",\n            advanced=True,\n        ),\n        SecretStrInput(\n            name=\"api_key\",\n            display_name=\"Search Plugin API Key\",\n            info=\"API ключ Search Plugin\",\n            value=\"SEARCH_PLUGIN_KEY\",\n            required=False,\n            advanced=True,\n        ),\n        IntInput(\n            name=\"timeout\",\n            display_name=\"Timeout\",\n            info=\"Таймаут запроса в секундах\",\n            value=CLIENT_TIMEOUT_SECONDS,\n            advanced=True,\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"Search Result\", name=\"search_result\", type_=Data, method=\"run_search\")\n    ]\n\n    def run_search(self) -> Data:\n        response_text = self._perform_search(\n            query=(self.query or \"\").strip(),\n            max_results=max(1, int(self.max_results or DEFAULT_MAX_RESULTS)),\n            safe_search=bool(self.safe_search),\n            domains=_parse_domains(self.domains),\n        )\n        self.status = response_text\n        return Data(data={\"text\": response_text})\n\n    def build(self):\n        return self.run_search\n\n    def _perform_search(\n        self,\n        query: str,\n        max_results: int,\n        safe_search: bool,\n        domains: Optional[Sequence[str] | str] = None,\n    ) -> str:\n        domain_list = _normalize_domains(domains)\n        search_query = _build_query(query, domain_list)\n        if not search_query:\n            return \"Формулировка запроса пуста. Уточни, что именно искать.\"\n\n        try:\n            api_key = _require_api_key(self.api_key)\n        except RuntimeError as error:\n            logger.warning(\"Search Plugin key missing: %s\", error)\n            return str(error)\n\n        search_mode = \"safe_search\" if safe_search else \"actual_info_web_search\"\n        body = {\n            \"query\": search_query,\n            \"search_mode\": search_mode,\n            \"additional_data\": {\"doc_count\": max(1, max_results)},\n        }\n\n        headers = {\n            \"Authorization\": api_key,\n            \"X-User-ID\": str(uuid.uuid4()),\n            \"X-Client-ID\": str(uuid.uuid4()),\n            \"X-Request-ID\": str(uuid.uuid4()),\n            \"X-Session-ID\": str(uuid.uuid4()),\n            \"User-Agent\": \"agent-toolkit\",\n        }\n\n        url = self.url or SEARCH_PLUGIN_DEFAULT_URL\n        timeout = self.timeout or CLIENT_TIMEOUT_SECONDS\n        logger.info(\"Search Plugin request to %s with query='%s'\", url, search_query)\n\n        try:\n            with httpx.Client(timeout=timeout) as client:\n                response = client.post(url, headers=headers, json=body)\n                response.raise_for_status()\n                payload = response.json()\n                if payload.get(\"payload\", {}).get(\"status\") == \"error\":\n                    search_plugin_error_metric.inc()\n                    raise ValueError(str(payload))\n\n                documents = payload.get(\"payload\", {}).get(\"documents\", [])\n                sources = payload.get(\"sources\", {})\n                limited_documents = documents[: max(1, max_results)]\n                if not limited_documents:\n                    search_plugin_empty_payload_metric.inc()\n                result_text = _format_documents(limited_documents, sources)\n                self.status = result_text\n                return result_text\n        except Exception as error:  # noqa: BLE001\n            logger.exception(\"Search Plugin request failed\")\n            search_plugin_empty_payload_metric.inc()\n            return f\"Search Plugin вернул ошибку или пустой ответ: {error}\"\n"
+              },
+              "domains": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Домены",
+                "dynamic": false,
+                "info": "Список доменов через запятую или перенос строки, чтобы ограничить поиск",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "domains",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "vtb.ru, tbank.ru, sberbank.com, alfabank.ru"
+              },
+              "max_results": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Максимум результатов",
+                "dynamic": false,
+                "info": "Количество документов в ответе",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "max_results",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 12
+              },
+              "query": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Запрос",
+                "dynamic": false,
+                "info": "Поисковый запрос",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "query",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "safe_search": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Safe Search",
+                "dynamic": false,
+                "info": "Использовать режим safe_search вместо actual_info_web_search",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "safe_search",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": false
+              },
+              "timeout": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Timeout",
+                "dynamic": false,
+                "info": "Таймаут запроса в секундах",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "timeout",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 30
+              },
+              "tools_metadata": {
+                "_input_type": "ToolsInput",
+                "advanced": false,
+                "display_name": "Actions",
+                "dynamic": false,
+                "info": "Modify tool names and descriptions to help agents understand when to use each tool.",
+                "is_list": true,
+                "list_add_label": "Add More",
+                "name": "tools_metadata",
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "tools",
+                "value": [
+                  {
+                    "args": {
+                      "query": {
+                        "description": "Поисковый запрос",
+                        "title": "Query",
+                        "type": "string"
+                      }
+                    },
+                    "description": "Выполняет веб-поиск через Search Plugin и возвращает краткие выдержки со ссылками.",
+                    "display_description": "Выполняет веб-поиск через Search Plugin и возвращает краткие выдержки со ссылками.",
+                    "display_name": "run_search",
+                    "name": "run_search",
+                    "readonly": false,
+                    "status": true,
+                    "tags": [
+                      "run_search"
+                    ]
+                  }
+                ]
+              },
+              "url": {
+                "_input_type": "SecretStrInput",
+                "advanced": true,
+                "display_name": "Search Plugin URL",
+                "dynamic": false,
+                "info": "Endpoint Search Plugin, по умолчанию https://${SEARCH_PLUGIN_HOST}/retrieval",
+                "input_types": [],
+                "load_from_db": false,
+                "name": "url",
+                "password": true,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": ""
+              }
+            },
+            "tool_mode": true
+          },
+          "showNode": true,
+          "type": "SearchPlugin"
+        },
+        "dragging": false,
+        "id": "SearchPlugin-jY2pr",
+        "measured": {
+          "height": 223,
+          "width": 320
+        },
+        "position": {
+          "x": -596.4131522613643,
+          "y": 159.9554353550313
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "CreditSnapshotDBTool-FOohD",
+          "node": {
+            "base_classes": [
+              "Data"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Validates JSON payload from LLM and saves structured snapshot rows into SQLite.",
+            "display_name": "Credit Snapshot DB Tool",
+            "documentation": "",
+            "edited": false,
+            "field_order": [
+              "record_json",
+              "snapshot_id",
+              "database_url"
+            ],
+            "frozen": false,
+            "icon": "database",
+            "last_updated": "2026-04-15T12:58:29.702Z",
+            "legacy": false,
+            "lf_version": "1.5.0.post1",
+            "metadata": {},
+            "minimized": false,
+            "name": "CreditSnapshotDBTool",
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Toolset",
+                "group_outputs": false,
+                "hidden": null,
+                "method": "to_toolkit",
+                "name": "component_as_tool",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Tool",
+                "tool_mode": true,
+                "types": [
+                  "Tool"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "\"\"\"Tool: validate credit snapshot JSON and persist to SQLite.\"\"\"\n\nfrom __future__ import annotations\n\nimport json\nimport sqlite3\nimport uuid\nfrom datetime import datetime, timezone\nfrom pathlib import Path\nfrom typing import Any\n\nfrom langflow.custom import Component\nfrom langflow.io import MessageTextInput, Output\nfrom langflow.schema import Data\n\n\nclass CreditSnapshotDBTool(Component):\n    display_name = \"Credit Snapshot DB Tool\"\n    description = \"Validates JSON payload from LLM and saves structured snapshot rows into SQLite.\"\n    icon = \"database\"\n    name = \"CreditSnapshotDBTool\"\n\n    inputs = [\n        MessageTextInput(\n            name=\"record_json\",\n            display_name=\"Record JSON\",\n            info=\"Structured JSON produced by the LLM.\",\n            required=True,\n            tool_mode=True,\n        ),\n        MessageTextInput(\n            name=\"snapshot_id\",\n            display_name=\"Snapshot ID\",\n            info=\"Optional snapshot ID. If empty, tool generates UUID.\",\n            required=False,\n            tool_mode=True,\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"database_url\",\n            display_name=\"Database URL\",\n            info=\"SQLite URL like sqlite:////tmp/credit_products.db\",\n            value=\"sqlite:////tmp/credit_products.db\",\n            required=True,\n            advanced=True,\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"Save Result\", name=\"save_credit_snapshot\", method=\"save_credit_snapshot\"),\n    ]\n\n    def save_credit_snapshot(self) -> Data:\n        text = (self.record_json or \"\").strip()\n        if not text:\n            return self._result(\"invalid_json\", errors=[\"record_json is empty\"], inserted_rows=0)\n\n        try:\n            payload = json.loads(text)\n        except Exception as exc:  # noqa: BLE001\n            return self._result(\"invalid_json\", errors=[f\"JSON parse error: {exc}\"], inserted_rows=0)\n\n        validation_errors = self._validate_payload(payload)\n        if validation_errors:\n            return self._result(\"invalid_json\", errors=validation_errors, inserted_rows=0)\n\n        run_summary = payload.get(\"run_summary\") or {}\n        banks = payload.get(\"banks\") or []\n        resolved_snapshot_id = (self.snapshot_id or \"\").strip() or str(uuid.uuid4())\n\n        try:\n            db_path = self._sqlite_path(self.database_url)\n            inserted = self._write_rows(db_path, resolved_snapshot_id, run_summary, banks)\n        except Exception as exc:  # noqa: BLE001\n            return self._result(\"error\", snapshot_id=resolved_snapshot_id, errors=[str(exc)], inserted_rows=0)\n\n        return self._result(\"ok\", snapshot_id=resolved_snapshot_id, inserted_rows=inserted)\n\n    def _validate_payload(self, payload: dict[str, Any]) -> list[str]:\n        errors: list[str] = []\n        if not isinstance(payload, dict):\n            return [\"Top-level JSON must be an object\"]\n\n        for key in [\"run_summary\", \"banks\", \"comparison\"]:\n            if key not in payload:\n                errors.append(f\"Missing top-level key: {key}\")\n\n        banks = payload.get(\"banks\")\n        if not isinstance(banks, list) or len(banks) == 0:\n            errors.append(\"banks must be a non-empty array\")\n            return errors\n\n        required_bank_fields = [\"bank\", \"source_url\", \"confidence\"]\n        for idx, item in enumerate(banks):\n            if not isinstance(item, dict):\n                errors.append(f\"banks[{idx}] must be an object\")\n                continue\n            for field in required_bank_fields:\n                value = item.get(field)\n                if value is None or (isinstance(value, str) and not value.strip()):\n                    errors.append(f\"banks[{idx}].{field} is required\")\n        return errors\n\n    def _sqlite_path(self, url: str) -> Path:\n        raw = (url or \"\").strip()\n        if raw.startswith(\"sqlite:///\"):\n            return Path(raw.replace(\"sqlite:///\", \"\", 1))\n        return Path(raw)\n\n    def _write_rows(self, db_path: Path, snapshot_id: str, run_summary: dict[str, Any], banks: list[dict[str, Any]]) -> int:\n        db_path.parent.mkdir(parents=True, exist_ok=True)\n        now_iso = datetime.now(timezone.utc).isoformat()\n\n        with sqlite3.connect(db_path) as conn:\n            conn.execute(\n                \"\"\"\n                CREATE TABLE IF NOT EXISTS credit_product_snapshots (\n                    id INTEGER PRIMARY KEY AUTOINCREMENT,\n                    snapshot_id TEXT NOT NULL,\n                    topic TEXT,\n                    generated_at TEXT,\n                    bank TEXT,\n                    product TEXT,\n                    rate TEXT,\n                    apr_psk TEXT,\n                    max_amount TEXT,\n                    term TEXT,\n                    special_conditions TEXT,\n                    source_url TEXT,\n                    confidence TEXT,\n                    missing_fields TEXT,\n                    raw_record TEXT,\n                    created_at TEXT NOT NULL\n                );\n                \"\"\"\n            )\n\n            rows = []\n            for item in banks:\n                rows.append(\n                    (\n                        snapshot_id,\n                        str(run_summary.get(\"topic\") or \"\"),\n                        str(run_summary.get(\"generated_at\") or \"\"),\n                        str(item.get(\"bank\") or \"\"),\n                        str(item.get(\"product\") or \"\"),\n                        json.dumps(item.get(\"rate\"), ensure_ascii=False),\n                        json.dumps(item.get(\"apr_psk\"), ensure_ascii=False),\n                        json.dumps(item.get(\"max_amount\"), ensure_ascii=False),\n                        json.dumps(item.get(\"term\"), ensure_ascii=False),\n                        json.dumps(item.get(\"special_conditions\"), ensure_ascii=False),\n                        str(item.get(\"source_url\") or \"\"),\n                        str(item.get(\"confidence\") or \"\"),\n                        json.dumps(item.get(\"missing_fields\"), ensure_ascii=False),\n                        json.dumps(item, ensure_ascii=False),\n                        now_iso,\n                    )\n                )\n\n            conn.executemany(\n                \"\"\"\n                INSERT INTO credit_product_snapshots (\n                    snapshot_id, topic, generated_at, bank, product, rate, apr_psk, max_amount,\n                    term, special_conditions, source_url, confidence, missing_fields, raw_record, created_at\n                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);\n                \"\"\",\n                rows,\n            )\n            conn.commit()\n\n        return len(rows)\n\n    def _result(\n        self,\n        status: str,\n        snapshot_id: str | None = None,\n        inserted_rows: int = 0,\n        errors: list[str] | None = None,\n    ) -> Data:\n        payload = {\n            \"status\": status,\n            \"snapshot_id\": snapshot_id,\n            \"inserted_rows\": inserted_rows,\n            \"errors\": errors or [],\n        }\n        self.status = payload\n        return Data(data={\"text\": json.dumps(payload, ensure_ascii=False), **payload})\n"
+              },
+              "database_url": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Database URL",
+                "dynamic": false,
+                "info": "SQLite URL like sqlite:////tmp/credit_products.db",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "database_url",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "sqlite:////tmp/credit_products.db"
+              },
+              "record_json": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Record JSON",
+                "dynamic": false,
+                "info": "Structured JSON produced by the LLM.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "record_json",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "snapshot_id": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Snapshot ID",
+                "dynamic": false,
+                "info": "Optional snapshot ID. If empty, tool generates UUID.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "snapshot_id",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "tools_metadata": {
+                "_input_type": "ToolsInput",
+                "advanced": false,
+                "display_name": "Actions",
+                "dynamic": false,
+                "info": "Modify tool names and descriptions to help agents understand when to use each tool.",
+                "is_list": true,
+                "list_add_label": "Add More",
+                "name": "tools_metadata",
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "tools",
+                "value": [
+                  {
+                    "args": {
+                      "record_json": {
+                        "description": "Structured JSON from the agent output.",
+                        "title": "Record Json",
+                        "type": "string"
+                      },
+                      "snapshot_id": {
+                        "description": "Optional snapshot id for grouping rows.",
+                        "title": "Snapshot Id",
+                        "type": "string"
+                      }
+                    },
+                    "description": "Validate JSON and save credit snapshot rows into SQLite. Returns status ok/invalid_json/error.",
+                    "display_description": "Validate JSON and save credit snapshot rows into SQLite. Returns status ok/invalid_json/error.",
+                    "display_name": "save_credit_snapshot",
+                    "name": "save_credit_snapshot",
+                    "readonly": false,
+                    "status": true,
+                    "tags": [
+                      "save_credit_snapshot"
+                    ]
+                  }
+                ]
+              }
+            },
+            "tool_mode": true
+          },
+          "showNode": true,
+          "type": "CreditSnapshotDBTool"
+        },
+        "dragging": false,
+        "id": "CreditSnapshotDBTool-FOohD",
+        "measured": {
+          "height": 223,
+          "width": 320
+        },
+        "position": {
+          "x": -592.9287097580992,
+          "y": 430.83369202083793
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "ChatOutput-IaTFt",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Display a chat message in the Playground.",
+            "display_name": "Chat Output",
+            "documentation": "https://docs.langflow.org/components-io#chat-output",
+            "edited": false,
+            "field_order": [
+              "input_value",
+              "should_store_message",
+              "sender",
+              "sender_name",
+              "session_id",
+              "data_template",
+              "background_color",
+              "chat_icon",
+              "text_color",
+              "clean_data"
+            ],
+            "frozen": false,
+            "icon": "MessagesSquare",
+            "legacy": false,
+            "lf_version": "1.5.0.post1",
+            "metadata": {},
+            "minimized": true,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Output Message",
+                "group_outputs": false,
+                "method": "message_response",
+                "name": "message",
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "background_color": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Background Color",
+                "dynamic": false,
+                "info": "The background color of the icon.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "background_color",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "chat_icon": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Icon",
+                "dynamic": false,
+                "info": "The icon of the message.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "chat_icon",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "clean_data": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Basic Clean Data",
+                "dynamic": false,
+                "info": "Whether to clean the data",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "clean_data",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from collections.abc import Generator\nfrom typing import Any\n\nimport orjson\nfrom fastapi.encoders import jsonable_encoder\n\nfrom langflow.base.io.chat import ChatComponent\nfrom langflow.helpers.data import safe_convert\nfrom langflow.inputs.inputs import BoolInput, DropdownInput, HandleInput, MessageTextInput\nfrom langflow.schema.data import Data\nfrom langflow.schema.dataframe import DataFrame\nfrom langflow.schema.message import Message\nfrom langflow.schema.properties import Source\nfrom langflow.template.field.base import Output\nfrom langflow.utils.constants import (\n    MESSAGE_SENDER_AI,\n    MESSAGE_SENDER_NAME_AI,\n    MESSAGE_SENDER_USER,\n)\n\n\nclass ChatOutput(ChatComponent):\n    display_name = \"Chat Output\"\n    description = \"Display a chat message in the Playground.\"\n    documentation: str = \"https://docs.langflow.org/components-io#chat-output\"\n    icon = \"MessagesSquare\"\n    name = \"ChatOutput\"\n    minimized = True\n\n    inputs = [\n        HandleInput(\n            name=\"input_value\",\n            display_name=\"Inputs\",\n            info=\"Message to be passed as output.\",\n            input_types=[\"Data\", \"DataFrame\", \"Message\"],\n            required=True,\n        ),\n        BoolInput(\n            name=\"should_store_message\",\n            display_name=\"Store Messages\",\n            info=\"Store the message in the history.\",\n            value=True,\n            advanced=True,\n        ),\n        DropdownInput(\n            name=\"sender\",\n            display_name=\"Sender Type\",\n            options=[MESSAGE_SENDER_AI, MESSAGE_SENDER_USER],\n            value=MESSAGE_SENDER_AI,\n            advanced=True,\n            info=\"Type of sender.\",\n        ),\n        MessageTextInput(\n            name=\"sender_name\",\n            display_name=\"Sender Name\",\n            info=\"Name of the sender.\",\n            value=MESSAGE_SENDER_NAME_AI,\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"session_id\",\n            display_name=\"Session ID\",\n            info=\"The session ID of the chat. If empty, the current session ID parameter will be used.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"data_template\",\n            display_name=\"Data Template\",\n            value=\"{text}\",\n            advanced=True,\n            info=\"Template to convert Data to Text. If left empty, it will be dynamically set to the Data's text key.\",\n        ),\n        MessageTextInput(\n            name=\"background_color\",\n            display_name=\"Background Color\",\n            info=\"The background color of the icon.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"chat_icon\",\n            display_name=\"Icon\",\n            info=\"The icon of the message.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"text_color\",\n            display_name=\"Text Color\",\n            info=\"The text color of the name\",\n            advanced=True,\n        ),\n        BoolInput(\n            name=\"clean_data\",\n            display_name=\"Basic Clean Data\",\n            value=True,\n            info=\"Whether to clean the data\",\n            advanced=True,\n        ),\n    ]\n    outputs = [\n        Output(\n            display_name=\"Output Message\",\n            name=\"message\",\n            method=\"message_response\",\n        ),\n    ]\n\n    def _build_source(self, id_: str | None, display_name: str | None, source: str | None) -> Source:\n        source_dict = {}\n        if id_:\n            source_dict[\"id\"] = id_\n        if display_name:\n            source_dict[\"display_name\"] = display_name\n        if source:\n            # Handle case where source is a ChatOpenAI object\n            if hasattr(source, \"model_name\"):\n                source_dict[\"source\"] = source.model_name\n            elif hasattr(source, \"model\"):\n                source_dict[\"source\"] = str(source.model)\n            else:\n                source_dict[\"source\"] = str(source)\n        return Source(**source_dict)\n\n    async def message_response(self) -> Message:\n        # First convert the input to string if needed\n        text = self.convert_to_string()\n\n        # Get source properties\n        source, icon, display_name, source_id = self.get_properties_from_source_component()\n        background_color = self.background_color\n        text_color = self.text_color\n        if self.chat_icon:\n            icon = self.chat_icon\n\n        # Create or use existing Message object\n        if isinstance(self.input_value, Message):\n            message = self.input_value\n            # Update message properties\n            message.text = text\n        else:\n            message = Message(text=text)\n\n        # Set message properties\n        message.sender = self.sender\n        message.sender_name = self.sender_name\n        message.session_id = self.session_id\n        message.flow_id = self.graph.flow_id if hasattr(self, \"graph\") else None\n        message.properties.source = self._build_source(source_id, display_name, source)\n        message.properties.icon = icon\n        message.properties.background_color = background_color\n        message.properties.text_color = text_color\n\n        # Store message if needed\n        if self.session_id and self.should_store_message:\n            stored_message = await self.send_message(message)\n            self.message.value = stored_message\n            message = stored_message\n\n        self.status = message\n        return message\n\n    def _serialize_data(self, data: Data) -> str:\n        \"\"\"Serialize Data object to JSON string.\"\"\"\n        # Convert data.data to JSON-serializable format\n        serializable_data = jsonable_encoder(data.data)\n        # Serialize with orjson, enabling pretty printing with indentation\n        json_bytes = orjson.dumps(serializable_data, option=orjson.OPT_INDENT_2)\n        # Convert bytes to string and wrap in Markdown code blocks\n        return \"```json\\n\" + json_bytes.decode(\"utf-8\") + \"\\n```\"\n\n    def _validate_input(self) -> None:\n        \"\"\"Validate the input data and raise ValueError if invalid.\"\"\"\n        if self.input_value is None:\n            msg = \"Input data cannot be None\"\n            raise ValueError(msg)\n        if isinstance(self.input_value, list) and not all(\n            isinstance(item, Message | Data | DataFrame | str) for item in self.input_value\n        ):\n            invalid_types = [\n                type(item).__name__\n                for item in self.input_value\n                if not isinstance(item, Message | Data | DataFrame | str)\n            ]\n            msg = f\"Expected Data or DataFrame or Message or str, got {invalid_types}\"\n            raise TypeError(msg)\n        if not isinstance(\n            self.input_value,\n            Message | Data | DataFrame | str | list | Generator | type(None),\n        ):\n            type_name = type(self.input_value).__name__\n            msg = f\"Expected Data or DataFrame or Message or str, Generator or None, got {type_name}\"\n            raise TypeError(msg)\n\n    def convert_to_string(self) -> str | Generator[Any, None, None]:\n        \"\"\"Convert input data to string with proper error handling.\"\"\"\n        self._validate_input()\n        if isinstance(self.input_value, list):\n            return \"\\n\".join([safe_convert(item, clean_data=self.clean_data) for item in self.input_value])\n        if isinstance(self.input_value, Generator):\n            return self.input_value\n        return safe_convert(self.input_value)\n"
+              },
+              "data_template": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Data Template",
+                "dynamic": false,
+                "info": "Template to convert Data to Text. If left empty, it will be dynamically set to the Data's text key.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "data_template",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "{text}"
+              },
+              "input_value": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Inputs",
+                "dynamic": false,
+                "info": "Message to be passed as output.",
+                "input_types": [
+                  "Data",
+                  "DataFrame",
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "input_value",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "sender": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Sender Type",
+                "dynamic": false,
+                "info": "Type of sender.",
+                "name": "sender",
+                "options": [
+                  "Machine",
+                  "User"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Machine"
+              },
+              "sender_name": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Sender Name",
+                "dynamic": false,
+                "info": "Name of the sender.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "sender_name",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "AI"
+              },
+              "session_id": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Session ID",
+                "dynamic": false,
+                "info": "The session ID of the chat. If empty, the current session ID parameter will be used.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "session_id",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "should_store_message": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Store Messages",
+                "dynamic": false,
+                "info": "Store the message in the history.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "should_store_message",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
+              "text_color": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Text Color",
+                "dynamic": false,
+                "info": "The text color of the name",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "text_color",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": false,
+          "type": "ChatOutput"
+        },
+        "dragging": false,
+        "height": 233,
+        "id": "ChatOutput-IaTFt",
+        "measured": {
+          "height": 233,
+          "width": 320
+        },
+        "position": {
+          "x": 460,
+          "y": 40
+        },
+        "positionAbsolute": {
+          "x": 836.294512913411,
+          "y": 471.8893597430057
+        },
+        "selected": false,
+        "type": "genericNode",
+        "width": 320
+      },
+      {
+        "data": {
+          "id": "SQLComponent-K1pfc",
+          "node": {
+            "base_classes": [
+              "DataFrame"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Executes SQL queries on SQLAlchemy-compatible databases.",
+            "display_name": "SQL Database",
+            "documentation": "https://docs.langflow.org/components-data#sql-database",
+            "edited": false,
+            "field_order": [
+              "database_url",
+              "query",
+              "include_columns",
+              "add_error"
+            ],
+            "frozen": false,
+            "icon": "database",
+            "last_updated": "2026-04-15T12:58:29.702Z",
+            "legacy": false,
+            "lf_version": "1.5.0.post1",
+            "metadata": {
+              "keywords": [
+                "sql",
+                "database",
+                "query",
+                "db",
+                "fetch"
+              ]
+            },
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Toolset",
+                "group_outputs": false,
+                "hidden": null,
+                "method": "to_toolkit",
+                "name": "component_as_tool",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Tool",
+                "tool_mode": true,
+                "types": [
+                  "Tool"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "add_error": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Add Error",
+                "dynamic": false,
+                "info": "If True, the error will be added to the result",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "add_error",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from typing import TYPE_CHECKING, Any\n\nfrom langchain_community.utilities import SQLDatabase\nfrom sqlalchemy.exc import SQLAlchemyError\n\nfrom langflow.custom.custom_component.component_with_cache import ComponentWithCache\nfrom langflow.io import BoolInput, MessageTextInput, MultilineInput, Output\nfrom langflow.schema.dataframe import DataFrame\nfrom langflow.schema.message import Message\nfrom langflow.services.cache.utils import CacheMiss\n\nif TYPE_CHECKING:\n    from sqlalchemy.engine import Result\n\n\nclass SQLComponent(ComponentWithCache):\n    \"\"\"A sql component.\"\"\"\n\n    display_name = \"SQL Database\"\n    description = \"Executes SQL queries on SQLAlchemy-compatible databases.\"\n    documentation: str = \"https://docs.langflow.org/components-data#sql-database\"\n    icon = \"database\"\n    name = \"SQLComponent\"\n    metadata = {\"keywords\": [\"sql\", \"database\", \"query\", \"db\", \"fetch\"]}\n\n    def __init__(self, **kwargs) -> None:\n        super().__init__(**kwargs)\n        self.db: SQLDatabase = None\n\n    def maybe_create_db(self):\n        if self.database_url != \"\":\n            cached_db = self._shared_component_cache.get(self.database_url)\n            if not isinstance(cached_db, CacheMiss):\n                self.db = cached_db\n                return\n            self.log(\"Connecting to database\")\n            try:\n                self.db = SQLDatabase.from_uri(self.database_url)\n            except Exception as e:\n                msg = f\"An error occurred while connecting to the database: {e}\"\n                raise ValueError(msg) from e\n            self._shared_component_cache.set(self.database_url, self.db)\n\n    inputs = [\n        MessageTextInput(name=\"database_url\", display_name=\"Database URL\", required=True),\n        MultilineInput(name=\"query\", display_name=\"SQL Query\", tool_mode=True, required=True),\n        BoolInput(name=\"include_columns\", display_name=\"Include Columns\", value=True, tool_mode=True, advanced=True),\n        BoolInput(\n            name=\"add_error\",\n            display_name=\"Add Error\",\n            value=False,\n            tool_mode=True,\n            info=\"If True, the error will be added to the result\",\n            advanced=True,\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"Result Table\", name=\"run_sql_query\", method=\"run_sql_query\"),\n    ]\n\n    def build_component(\n        self,\n    ) -> Message:\n        error = None\n        self.maybe_create_db()\n        try:\n            result = self.db.run(self.query, include_columns=self.include_columns)\n            self.status = result\n        except SQLAlchemyError as e:\n            msg = f\"An error occurred while running the SQL Query: {e}\"\n            self.log(msg)\n            result = str(e)\n            self.status = result\n            error = repr(e)\n\n        if self.add_error and error is not None:\n            result = f\"{result}\\n\\nError: {error}\\n\\nQuery: {self.query}\"\n        elif error is not None:\n            # Then we won't add the error to the result\n            result = self.query\n\n        return Message(text=result)\n\n    def __execute_query(self) -> list[dict[str, Any]]:\n        self.maybe_create_db()\n        try:\n            cursor: Result[Any] = self.db.run(self.query, fetch=\"cursor\")\n            return [x._asdict() for x in cursor.fetchall()]\n        except SQLAlchemyError as e:\n            msg = f\"An error occurred while running the SQL Query: {e}\"\n            self.log(msg)\n            raise ValueError(msg) from e\n\n    def run_sql_query(self) -> DataFrame:\n        result = self.__execute_query()\n        df_result = DataFrame(result)\n        self.status = df_result\n        return df_result\n"
+              },
+              "database_url": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Database URL",
+                "dynamic": false,
+                "info": "",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "database_url",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "sqlite:////tmp/credit_products.db"
+              },
+              "include_columns": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Include Columns",
+                "dynamic": false,
+                "info": "",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "include_columns",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
+              "query": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "copy_field": false,
+                "display_name": "SQL Query",
+                "dynamic": false,
+                "info": "",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "query",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "SELECT generated_at, bank, rate, apr_psk, max_amount, confidence FROM credit_product_snapshots ORDER BY generated_at DESC, bank LIMIT 32;"
+              },
+              "tools_metadata": {
+                "_input_type": "ToolsInput",
+                "advanced": false,
+                "display_name": "Actions",
+                "dynamic": false,
+                "info": "Modify tool names and descriptions to help agents understand when to use each tool.",
+                "is_list": true,
+                "list_add_label": "Add More",
+                "name": "tools_metadata",
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "tools",
+                "value": [
+                  {
+                    "args": {
+                      "add_error": {
+                        "default": false,
+                        "description": "If True, the error will be added to the result",
+                        "title": "Add Error",
+                        "type": "boolean"
+                      },
+                      "include_columns": {
+                        "default": true,
+                        "description": "",
+                        "title": "Include Columns",
+                        "type": "boolean"
+                      },
+                      "query": {
+                        "description": "",
+                        "title": "Query",
+                        "type": "string"
+                      }
+                    },
+                    "description": "Executes SQL queries on SQLAlchemy-compatible databases.",
+                    "display_description": "Executes SQL queries on SQLAlchemy-compatible databases.",
+                    "display_name": "run_sql_query",
+                    "name": "run_sql_query",
+                    "readonly": false,
+                    "status": true,
+                    "tags": [
+                      "run_sql_query"
+                    ]
+                  }
+                ]
+              }
+            },
+            "tool_mode": true
+          },
+          "showNode": true,
+          "type": "SQLComponent"
+        },
+        "dragging": false,
+        "id": "SQLComponent-K1pfc",
+        "measured": {
+          "height": 304,
+          "width": 320
+        },
+        "position": {
+          "x": -585.5532684604002,
+          "y": 983.105406076528
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "CreditMarketAnalyticsTool-MuKnb",
+          "node": {
+            "base_classes": [
+              "Data"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Reads credit snapshots from SQLite, calculates trend statistics, and returns fact-ready JSON for the agent.",
+            "display_name": "Credit Market Analytics Tool",
+            "documentation": "",
+            "edited": false,
+            "field_order": [
+              "record_json",
+              "snapshot_id",
+              "database_url"
+            ],
+            "frozen": false,
+            "icon": "database",
+            "last_updated": "2026-04-15T12:58:29.703Z",
+            "legacy": false,
+            "lf_version": "1.5.0.post1",
+            "metadata": {},
+            "minimized": false,
+            "name": "CreditMarketAnalyticsTool",
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Toolset",
+                "group_outputs": false,
+                "hidden": null,
+                "method": "to_toolkit",
+                "name": "component_as_tool",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Tool",
+                "tool_mode": true,
+                "types": [
+                  "Tool"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "\"\"\"Tool: calculate market analytics from historical credit snapshots.\"\"\"\n\nfrom __future__ import annotations\n\nimport json\nimport re\nimport sqlite3\nfrom collections import defaultdict\nfrom pathlib import Path\n\nfrom langflow.custom import Component\nfrom langflow.io import MessageTextInput, Output\nfrom langflow.schema import Data\n\n\nclass CreditMarketAnalyticsTool(Component):\n    display_name = \"Credit Market Analytics Tool\"\n    description = \"Reads snapshots from SQLite and returns trend analytics for agent reasoning.\"\n    icon = \"line-chart\"\n    name = \"CreditMarketAnalyticsTool\"\n\n    inputs = [\n        MessageTextInput(\n            name=\"record_json\",\n            display_name=\"Focus\",\n            info=\"Optional focus (e.g., market, Sber, VTB, T-Bank, Alfa).\",\n            required=False,\n            tool_mode=True,\n        ),\n        MessageTextInput(\n            name=\"snapshot_id\",\n            display_name=\"Bank Filter\",\n            info=\"Optional bank name filter. Leave empty for all banks.\",\n            required=False,\n            tool_mode=True,\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"database_url\",\n            display_name=\"Database URL\",\n            info=\"SQLite URL like sqlite:////tmp/credit_products.db\",\n            value=\"sqlite:////tmp/credit_products.db\",\n            required=True,\n            advanced=True,\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"Analytics\", name=\"get_credit_market_analytics\", method=\"get_credit_market_analytics\"),\n    ]\n\n    def get_credit_market_analytics(self) -> Data:\n        db_path = self._sqlite_path(self.database_url)\n        if not db_path.exists():\n            return self._result(\"error\", errors=[f\"Database file not found: {db_path}\"])\n\n        rows = self._load_rows(db_path)\n        if not rows:\n            return self._result(\"error\", errors=[\"No rows found in credit_product_snapshots\"])\n\n        focus = (self.record_json or \"\").strip().lower()\n        bank_filter = (self.snapshot_id or \"\").strip().lower()\n\n        snapshots = defaultdict(dict)\n        for row in rows:\n            snapshots[row[\"generated_at\"]][row[\"bank\"]] = row\n\n        ordered_dates = sorted(snapshots.keys())\n        first_date = ordered_dates[0]\n        last_date = ordered_dates[-1]\n\n        bank_names = sorted({r[\"bank\"] for r in rows})\n        if bank_filter:\n            bank_names = [b for b in bank_names if bank_filter in b.lower()]\n\n        bank_trends = []\n        facts = []\n\n        market_first = []\n        market_last = []\n\n        for bank in bank_names:\n            first_row = snapshots.get(first_date, {}).get(bank)\n            last_row = snapshots.get(last_date, {}).get(bank)\n            if not first_row or not last_row:\n                continue\n\n            first_rate = self._extract_percent(first_row.get(\"rate\", \"\"))\n            last_rate = self._extract_percent(last_row.get(\"rate\", \"\"))\n            first_apr = self._extract_percent(first_row.get(\"apr_psk\", \"\"))\n            last_apr = self._extract_percent(last_row.get(\"apr_psk\", \"\"))\n            first_amount = self._extract_number(first_row.get(\"max_amount\", \"\"))\n            last_amount = self._extract_number(last_row.get(\"max_amount\", \"\"))\n\n            if first_rate is not None and last_rate is not None:\n                market_first.append(first_rate)\n                market_last.append(last_rate)\n\n            rate_delta = (last_rate - first_rate) if first_rate is not None and last_rate is not None else None\n            apr_delta = (last_apr - first_apr) if first_apr is not None and last_apr is not None else None\n            amount_delta = (last_amount - first_amount) if first_amount is not None and last_amount is not None else None\n\n            if amount_delta is not None and abs(amount_delta) < 50000:\n                trend_label = \"stagnating\"\n            elif amount_delta is None:\n                trend_label = \"unknown\"\n            elif amount_delta > 0:\n                trend_label = \"growing\"\n            else:\n                trend_label = \"declining\"\n\n            bank_trends.append(\n                {\n                    \"bank\": bank,\n                    \"from\": first_date,\n                    \"to\": last_date,\n                    \"rate_start\": first_rate,\n                    \"rate_end\": last_rate,\n                    \"rate_delta_pp\": rate_delta,\n                    \"apr_delta_pp\": apr_delta,\n                    \"max_amount_start\": first_amount,\n                    \"max_amount_end\": last_amount,\n                    \"max_amount_delta\": amount_delta,\n                    \"trend\": trend_label,\n                }\n            )\n\n            if rate_delta is not None and amount_delta is not None:\n                facts.append(\n                    f\"{bank}: ставка {first_rate:.1f}% -> {last_rate:.1f}% ({rate_delta:+.1f} п.п.), max_amount {int(first_amount)} -> {int(last_amount)} ({int(amount_delta):+d})\"\n                )\n\n        market_rate_delta = None\n        if market_first and market_last:\n            market_rate_delta = (sum(market_last) / len(market_last)) - (sum(market_first) / len(market_first))\n\n        rankings = sorted(\n            bank_trends,\n            key=lambda x: (x.get(\"max_amount_delta\") if x.get(\"max_amount_delta\") is not None else -10**18),\n            reverse=True,\n        )\n\n        top = [x[\"bank\"] for x in rankings[:2]]\n        lag = [x[\"bank\"] for x in rankings[-1:]] if rankings else []\n\n        market_comment = \"moderate_growth\"\n        if market_rate_delta is not None and market_rate_delta > -0.2:\n            market_comment = \"flat_or_weak_improvement\"\n        elif market_rate_delta is not None and market_rate_delta < -0.8:\n            market_comment = \"strong_improvement\"\n\n        response = {\n            \"status\": \"ok\",\n            \"focus\": focus or None,\n            \"period\": {\"from\": first_date, \"to\": last_date, \"snapshots\": len(ordered_dates)},\n            \"market\": {\n                \"avg_rate_delta_pp\": market_rate_delta,\n                \"regime\": market_comment,\n            },\n            \"leaders_by_growth\": top,\n            \"laggards\": lag,\n            \"bank_trends\": bank_trends,\n            \"facts\": facts,\n            \"usage_hint\": \"Use facts and bank_trends in the final answer; mention raw SQL checks when needed.\",\n            \"errors\": [],\n        }\n\n        if focus and \"без аналитики\" in focus:\n            response[\"usage_hint\"] = \"User asked to avoid analytics; use run_sql_query for raw evidence.\"\n\n        self.status = response\n        return Data(data={\"text\": json.dumps(response, ensure_ascii=False), **response})\n\n    def _load_rows(self, db_path: Path) -> list[dict]:\n        query = \"\"\"\n            SELECT generated_at, bank, rate, apr_psk, max_amount, confidence\n            FROM credit_product_snapshots\n            ORDER BY generated_at ASC, bank ASC\n        \"\"\"\n        with sqlite3.connect(db_path) as conn:\n            conn.row_factory = sqlite3.Row\n            rows = conn.execute(query).fetchall()\n        return [dict(r) for r in rows]\n\n    def _sqlite_path(self, url: str) -> Path:\n        raw = (url or \"\").strip()\n        if raw.startswith(\"sqlite:///\"):\n            return Path(raw.replace(\"sqlite:///\", \"\", 1))\n        return Path(raw)\n\n    def _extract_percent(self, value: str):\n        if value is None:\n            return None\n        text = str(value)\n        match = re.search(r\"(\\d+(?:[.,]\\d+)?)\", text)\n        if not match:\n            return None\n        return float(match.group(1).replace(\",\", \".\"))\n\n    def _extract_number(self, value: str):\n        if value is None:\n            return None\n        text = str(value).replace(\" \", \"\")\n        match = re.search(r\"(\\d+)\", text)\n        if not match:\n            return None\n        return float(match.group(1))\n\n    def _result(self, status: str, errors: list[str] | None = None) -> Data:\n        payload = {\"status\": status, \"errors\": errors or []}\n        self.status = payload\n        return Data(data={\"text\": json.dumps(payload, ensure_ascii=False), **payload})\n"
+              },
+              "database_url": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Database URL",
+                "dynamic": false,
+                "info": "SQLite URL like sqlite:////tmp/credit_products.db",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "database_url",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "sqlite:////tmp/credit_products.db"
+              },
+              "record_json": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Focus",
+                "dynamic": false,
+                "info": "Optional focus (market, bank name, compare mode).",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "record_json",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "snapshot_id": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Bank Filter",
+                "dynamic": false,
+                "info": "Optional bank name filter for analytics.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "snapshot_id",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "tools_metadata": {
+                "_input_type": "ToolsInput",
+                "advanced": false,
+                "display_name": "Actions",
+                "dynamic": false,
+                "info": "Modify tool names and descriptions to help agents understand when to use each tool.",
+                "is_list": true,
+                "list_add_label": "Add More",
+                "name": "tools_metadata",
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "tools",
+                "value": [
+                  {
+                    "args": {
+                      "record_json": {
+                        "description": "Optional focus for analytics request (e.g., market, bank, compare).",
+                        "title": "Focus",
+                        "type": "string"
+                      },
+                      "snapshot_id": {
+                        "description": "Optional bank filter, e.g., Сбер or ВТБ.",
+                        "title": "Bank Filter",
+                        "type": "string"
+                      }
+                    },
+                    "description": "Calculate historical trend analytics from credit_product_snapshots and return fact-ready JSON.",
+                    "display_description": "Calculate historical trend analytics from credit_product_snapshots and return fact-ready JSON.",
+                    "display_name": "get_credit_market_analytics",
+                    "name": "get_credit_market_analytics",
+                    "readonly": false,
+                    "status": true,
+                    "tags": [
+                      "get_credit_market_analytics"
+                    ]
+                  }
+                ]
+              }
+            },
+            "tool_mode": true
+          },
+          "showNode": true,
+          "type": "CreditMarketAnalyticsTool"
+        },
+        "dragging": false,
+        "id": "CreditMarketAnalyticsTool-MuKnb",
+        "measured": {
+          "height": 239,
+          "width": 320
+        },
+        "position": {
+          "x": -590.497995067582,
+          "y": 701.4939852027461
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "note-Ecrbe",
+          "node": {
+            "description": "Проход 1 (без аналитики):\nСделай вывод по динамике Сбер, ВТБ, Т-Банк и Альфа-Банк, только по сырым данным из таблицы. Используй только run_sql_query, не вызывай get_credit_market_analytics. Дай короткий вывод по каждому банку и общий вывод по рынку.",
+            "display_name": "",
+            "documentation": "",
+            "template": {}
+          },
+          "type": "note"
+        },
+        "dragging": false,
+        "height": 324,
+        "id": "note-Ecrbe",
+        "measured": {
+          "height": 324,
+          "width": 396
+        },
+        "position": {
+          "x": -1439.0576161132453,
+          "y": -81.63430695920252
+        },
+        "resizing": false,
+        "selected": false,
+        "type": "noteNode",
+        "width": 396
+      },
+      {
+        "data": {
+          "id": "note-5K72c",
+          "node": {
+            "description": "Сделай вывод по динамике Сбер, ВТБ, Т-Банк и Альфа-Банка. Дай короткий вывод по каждому банку и общий вывод по рынку.\nобязательно вызови get_credit_market_analytics. Приведи минимум 3 факта с цифрами из facts",
+            "display_name": "",
+            "documentation": "",
+            "template": {}
+          },
+          "type": "note"
+        },
+        "id": "note-5K72c",
+        "measured": {
+          "height": 324,
+          "width": 575
+        },
+        "position": {
+          "x": -1441.5821225950751,
+          "y": 278.96765608142897
+        },
+        "selected": false,
+        "type": "noteNode"
+      }
+    ],
+    "viewport": {
+      "x": 1336.3130669308957,
+      "y": 157.4913321680457,
+      "zoom": 0.7903451151426125
+    }
+  },
+  "description": "Шаг 8: агенту доступна и сырая таблица (SQL tool), и отдельная tool аналитики трендов для демонстрации разницы качества выводов.",
+  "endpoint_name": null,
+  "id": "976596da-5775-4cdb-94da-64fc15f3b05a",
+  "is_component": false,
+  "last_tested_version": "1.5.0.post1",
+  "name": "Step 08 - Dual path analytics",
+  "tags": [
+    "agents",
+    "training",
+    "step-06",
+    "database",
+    "tools"
+  ]
+}
