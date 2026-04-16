@@ -181,7 +181,7 @@
             ],
             "frozen": false,
             "icon": "file-text",
-            "last_updated": "2026-04-15T12:56:22.392Z",
+            "last_updated": "2026-04-16T09:01:12.754Z",
             "legacy": false,
             "lf_version": "1.5.0.post1",
             "metadata": {},
@@ -1045,8 +1045,8 @@
           "width": 320
         },
         "position": {
-          "x": -360,
-          "y": 780
+          "x": -276.7117066682892,
+          "y": 856.6252298651741
         },
         "selected": false,
         "type": "genericNode"
@@ -1220,8 +1220,8 @@
           "width": 320
         },
         "position": {
-          "x": 80,
-          "y": 780
+          "x": 89.9945951998053,
+          "y": 999.8810943957167
         },
         "selected": false,
         "type": "genericNode"
@@ -1325,8 +1325,8 @@
           "width": 320
         },
         "position": {
-          "x": -355.08545867537623,
-          "y": 1054.7167425900427
+          "x": -281.7917605434707,
+          "y": 1114.6843137888743
         },
         "selected": false,
         "type": "genericNode"
@@ -1430,8 +1430,8 @@
           "width": 320
         },
         "position": {
-          "x": -364.67891638232277,
-          "y": 1323.3335583845453
+          "x": -306.3771110501252,
+          "y": 1368.3092367836691
         },
         "selected": false,
         "type": "genericNode"
@@ -1802,12 +1802,62 @@
         },
         "selected": false,
         "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "note-Wyt1K",
+          "node": {
+            "description": "## Это вспомогательные команды, что бы посмотреть, сколько строк вы залили в БД",
+            "display_name": "",
+            "documentation": "",
+            "template": {}
+          },
+          "type": "note"
+        },
+        "dragging": false,
+        "id": "note-Wyt1K",
+        "measured": {
+          "height": 324,
+          "width": 575
+        },
+        "position": {
+          "x": -880.4115615591196,
+          "y": 852.2905540159051
+        },
+        "selected": false,
+        "type": "noteNode"
+      },
+      {
+        "data": {
+          "id": "note-3Xk2g",
+          "node": {
+            "description": "## Возьмите файл historical_credit_snapshots_480rows.txt из папки datasets",
+            "display_name": "",
+            "documentation": "",
+            "template": {}
+          },
+          "type": "note"
+        },
+        "height": 335,
+        "id": "note-3Xk2g",
+        "measured": {
+          "height": 335,
+          "width": 428
+        },
+        "position": {
+          "x": -745.4845263617482,
+          "y": -152.1662635645273
+        },
+        "resizing": false,
+        "selected": false,
+        "type": "noteNode",
+        "width": 428
       }
     ],
     "viewport": {
-      "x": 512.1894831601144,
-      "y": -70.06180779901524,
-      "zoom": 0.5146245267623912
+      "x": 564.2816220913442,
+      "y": 126.10453253926818,
+      "zoom": 0.6003244633776549
     }
   },
   "description": "Шаг 7: загрузка исторических данных из файла и запись в SQLite; DB tool принимает JSONL (много JSON-строк) за один запуск. Отдельная ветка SQL-проверки.",

@@ -1455,7 +1455,7 @@
             ],
             "frozen": false,
             "icon": "Search",
-            "last_updated": "2026-04-15T12:58:29.701Z",
+            "last_updated": "2026-04-16T09:03:20.917Z",
             "legacy": false,
             "lf_version": "1.5.0.post1",
             "metadata": {},
@@ -1713,7 +1713,7 @@
             ],
             "frozen": false,
             "icon": "database",
-            "last_updated": "2026-04-15T12:58:29.702Z",
+            "last_updated": "2026-04-16T09:03:20.918Z",
             "legacy": false,
             "lf_version": "1.5.0.post1",
             "metadata": {},
@@ -2228,7 +2228,7 @@
             ],
             "frozen": false,
             "icon": "database",
-            "last_updated": "2026-04-15T12:58:29.702Z",
+            "last_updated": "2026-04-16T09:03:20.919Z",
             "legacy": false,
             "lf_version": "1.5.0.post1",
             "metadata": {
@@ -2456,7 +2456,7 @@
             ],
             "frozen": false,
             "icon": "database",
-            "last_updated": "2026-04-15T12:58:29.703Z",
+            "last_updated": "2026-04-16T09:03:20.919Z",
             "legacy": false,
             "lf_version": "1.5.0.post1",
             "metadata": {},
@@ -2638,7 +2638,7 @@
         "data": {
           "id": "note-Ecrbe",
           "node": {
-            "description": "Проход 1 (без аналитики):\nСделай вывод по динамике Сбер, ВТБ, Т-Банк и Альфа-Банк, только по сырым данным из таблицы. Используй только run_sql_query, не вызывай get_credit_market_analytics. Дай короткий вывод по каждому банку и общий вывод по рынку.",
+            "description": "## Примеры запросов\nПроход 1 (без аналитики):\n- Сделай вывод по динамике Сбер, ВТБ, Т-Банк и Альфа-Банк, только по сырым данным из таблицы. Используй только run_sql_query, не вызывай get_credit_market_analytics. Дай короткий вывод по каждому банку и общий вывод по рынку.\n\nПроход 2, через скрипт, который даст аналитику сам\n- Сделай вывод по динамике Сбер, ВТБ, Т-Банк и Альфа-Банка. Дай короткий вывод по каждому банку и общий вывод по рынку.\nобязательно вызови get_credit_market_analytics. Приведи минимум 3 факта с цифрами из facts",
             "display_name": "",
             "documentation": "",
             "template": {}
@@ -2646,49 +2646,26 @@
           "type": "note"
         },
         "dragging": false,
-        "height": 324,
+        "height": 466,
         "id": "note-Ecrbe",
         "measured": {
-          "height": 324,
-          "width": 396
+          "height": 466,
+          "width": 420
         },
         "position": {
-          "x": -1439.0576161132453,
-          "y": -81.63430695920252
+          "x": -1093.851687224418,
+          "y": -80.57869645146367
         },
         "resizing": false,
         "selected": false,
         "type": "noteNode",
-        "width": 396
-      },
-      {
-        "data": {
-          "id": "note-5K72c",
-          "node": {
-            "description": "Сделай вывод по динамике Сбер, ВТБ, Т-Банк и Альфа-Банка. Дай короткий вывод по каждому банку и общий вывод по рынку.\nобязательно вызови get_credit_market_analytics. Приведи минимум 3 факта с цифрами из facts",
-            "display_name": "",
-            "documentation": "",
-            "template": {}
-          },
-          "type": "note"
-        },
-        "id": "note-5K72c",
-        "measured": {
-          "height": 324,
-          "width": 575
-        },
-        "position": {
-          "x": -1441.5821225950751,
-          "y": 278.96765608142897
-        },
-        "selected": false,
-        "type": "noteNode"
+        "width": 420
       }
     ],
     "viewport": {
-      "x": 1336.3130669308957,
-      "y": 157.4913321680457,
-      "zoom": 0.7903451151426125
+      "x": 818.2775290114673,
+      "y": 239.94139951874064,
+      "zoom": 0.6775185848179675
     }
   },
   "description": "Шаг 8: агенту доступна и сырая таблица (SQL tool), и отдельная tool аналитики трендов для демонстрации разницы качества выводов.",

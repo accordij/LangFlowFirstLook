@@ -1485,7 +1485,7 @@
             ],
             "frozen": false,
             "icon": "Search",
-            "last_updated": "2026-04-15T12:46:52.225Z",
+            "last_updated": "2026-04-16T08:52:46.406Z",
             "legacy": false,
             "lf_version": "1.5.0.post1",
             "metadata": {},
@@ -1743,7 +1743,7 @@
             ],
             "frozen": false,
             "icon": "database",
-            "last_updated": "2026-04-15T12:46:52.226Z",
+            "last_updated": "2026-04-16T08:52:46.407Z",
             "legacy": false,
             "lf_version": "1.5.0.post1",
             "metadata": {},
@@ -2335,8 +2335,8 @@
           "width": 320
         },
         "position": {
-          "x": -141.6025699295038,
-          "y": 1053.8418600063242
+          "x": -153.50948126044986,
+          "y": 1400.8432759367515
         },
         "selected": false,
         "type": "genericNode"
@@ -2487,8 +2487,8 @@
           "width": 320
         },
         "position": {
-          "x": 266.6675399537423,
-          "y": 1014.7390974945102
+          "x": 209.11723444676642,
+          "y": 1401.9920640095477
         },
         "selected": false,
         "type": "genericNode"
@@ -2797,8 +2797,8 @@
           "width": 320
         },
         "position": {
-          "x": 773.3162735708631,
-          "y": 1081.928442459232
+          "x": 596.4220176061864,
+          "y": 1410.2204021711643
         },
         "selected": false,
         "type": "genericNode",
@@ -2973,8 +2973,8 @@
           "width": 320
         },
         "position": {
-          "x": 711.213633845409,
-          "y": 467.5302830143331
+          "x": 683.4341177768489,
+          "y": 578.6483472885736
         },
         "selected": false,
         "type": "genericNode"
@@ -3078,8 +3078,8 @@
           "width": 320
         },
         "position": {
-          "x": 282.2949959070502,
-          "y": 461.0807002057687
+          "x": 292.21625164582167,
+          "y": 586.0885225142893
         },
         "selected": false,
         "type": "genericNode"
@@ -3088,7 +3088,7 @@
         "data": {
           "id": "note-OEGtY",
           "node": {
-            "description": "Примеры запрсов:\nSELECT 1 AS ok;\n  \nSELECT sqlite_version() AS version;\n\nSELECT name FROM sqlite_master WHERE type='table';",
+            "description": "## Примеры запрсов для проверки SQLite:\n\n- SELECT 1 AS ok;\n  \n- SELECT sqlite_version() AS version;\n\n- SELECT name FROM sqlite_master WHERE type='table';\n\nP.S. SQLite может не работать нормально вне папки temp",
             "display_name": "",
             "documentation": "",
             "template": {}
@@ -3096,41 +3096,20 @@
           "type": "note"
         },
         "dragging": false,
+        "height": 324,
         "id": "note-OEGtY",
         "measured": {
           "height": 324,
-          "width": 386
+          "width": 480
         },
         "position": {
-          "x": -159.94854572497536,
-          "y": 436.09881395640866
+          "x": -235.00661696460776,
+          "y": 577.5523898683514
         },
+        "resizing": false,
         "selected": false,
-        "type": "noteNode"
-      },
-      {
-        "data": {
-          "id": "note-SdwM1",
-          "node": {
-            "description": "Ты senior Python engineer, пишешь production-ready custom component для LangFlow 1.5.x.\n\n## Цель\n\nНужен компонент-инструмент (tool) для агента, который:\n1. Принимает структурированный JSON от LLM.\n2. Валидирует JSON по обязательным полям.\n3. Если JSON невалиден — возвращает понятную machine-readable ошибку.\n4. Если JSON валиден — сохраняет записи в SQLite.\n5. Возвращает результат выполнения в JSON-формате со статусом.\n\n## Технические ограничения\n\n- Только Python.\n- Без внешних зависимостей кроме стандартной библиотеки и импортов LangFlow.\n- Совместимость с LangFlow 1.5.x.\n- Компонент должен работать как tool для агента (`to_toolkit` / `component_as_tool`).\n- Должен быть безопасный и предсказуемый обработчик ошибок.\n\n## Имя компонента\n\n- `display_name = \"Credit Snapshot DB Tool\"`\n- `name = \"CreditSnapshotDBTool\"`\n- `icon = \"database\"`\n\n## Входы компонента\n\n1. `record_json` (обязательный, `MessageTextInput`, `tool_mode=True`)  \n   JSON-строка со структурированным результатом от LLM.\n2. `snapshot_id` (необязательный, `MessageTextInput`, `tool_mode=True`)  \n   Если пустой — компонент сам генерирует UUID.\n3. `database_url` (обязательный, `MessageTextInput`, `advanced=True`)  \n   Значение по умолчанию: `sqlite:////tmp/credit_products.db`\n\n## Выход компонента\n\n- Один action-метод: `save_credit_snapshot`\n- Возвращаемый тип: `Data`\n- В `Data.data` обязательно положить:\n  - `status`: `ok | invalid_json | error`\n  - `snapshot_id`: `string | null`\n  - `inserted_rows`: `int`\n  - `errors`: `string[]`\n  - `text`: JSON-строка с тем же payload (для удобного показа в логах/чате)\n\n## Ожидаемая структура входного JSON (`record_json`)\n\n```json\n{\n  \"run_summary\": {\n    \"topic\": \"string|null\",\n    \"generated_at\": \"string|null\"\n  },\n  \"banks\": [\n    {\n      \"bank\": \"string\",\n      \"product\": \"string|null\",\n      \"rate\": \"any\",\n      \"apr_psk\": \"any\",\n      \"max_amount\": \"any\",\n      \"term\": \"any\",\n      \"special_conditions\": [],\n      \"source_url\": \"string\",\n      \"confidence\": \"string\",\n      \"missing_fields\": []\n    }\n  ],\n  \"comparison\": {\n    \"best_rate_hint\": \"string|null\",\n    \"notes\": []\n  }\n}\n```\n\n## Валидация\n\nМинимальные правила:\n- JSON должен парситься.\n- Top-level объект.\n- Обязательные ключи верхнего уровня: `run_summary`, `banks`, `comparison`.\n- `banks` — непустой массив.\n- Для каждого элемента в `banks` обязательны:\n  - `bank` (непустая строка)\n  - `source_url` (непустая строка)\n  - `confidence` (непустая строка)\n\nПри нарушении:\n- `status=invalid_json`\n- `inserted",
-            "display_name": "",
-            "documentation": "",
-            "template": {}
-          },
-          "type": "note"
-        },
-        "dragging": false,
-        "id": "note-SdwM1",
-        "measured": {
-          "height": 2557,
-          "width": 575
-        },
-        "position": {
-          "x": -2542.1819338699447,
-          "y": 11.25125116776644
-        },
-        "selected": false,
-        "type": "noteNode"
+        "type": "noteNode",
+        "width": 480
       },
       {
         "data": {
@@ -3173,17 +3152,115 @@
           "width": 536
         },
         "position": {
-          "x": -805.8142982507551,
-          "y": 1069.091301005381
+          "x": -700.6489874197774,
+          "y": 1057.1857941188553
+        },
+        "selected": false,
+        "type": "noteNode"
+      },
+      {
+        "data": {
+          "id": "note-R6zGH",
+          "node": {
+            "description": "## Это полигон для тестирования вашей кастомной тулы",
+            "display_name": "",
+            "documentation": "",
+            "template": {}
+          },
+          "type": "note"
+        },
+        "dragging": false,
+        "height": 324,
+        "id": "note-R6zGH",
+        "measured": {
+          "height": 324,
+          "width": 1000
+        },
+        "position": {
+          "x": -160.73240436798022,
+          "y": 1066.5815922712832
+        },
+        "resizing": false,
+        "selected": false,
+        "type": "noteNode",
+        "width": 1000
+      },
+      {
+        "data": {
+          "id": "note-R5Xas",
+          "node": {
+            "description": "Ты senior Python engineer, пишешь production-ready custom component для LangFlow 1.5.x.\n\n## Цель\n\nНужен компонент-инструмент (tool) для агента, который:\n1. Принимает структурированный JSON от LLM.\n2. Валидирует JSON по обязательным полям.\n3. Если JSON невалиден — возвращает понятную machine-readable ошибку.\n4. Если JSON валиден — сохраняет записи в SQLite.\n5. Возвращает результат выполнения в JSON-формате со статусом.\n\n## Технические ограничения\n\n- Только Python.\n- Без внешних зависимостей кроме стандартной библиотеки и импортов LangFlow.\n- Совместимость с LangFlow 1.5.x.\n- Компонент должен работать как tool для агента (`to_toolkit` / `component_as_tool`).\n- Должен быть безопасный и предсказуемый обработчик ошибок.\n\n## Имя компонента\n\n- `display_name = \"Credit Snapshot DB Tool\"`\n- `name = \"CreditSnapshotDBTool\"`\n- `icon = \"database\"`\n\n## Входы компонента\n\n1. `record_json` (обязательный, `MessageTextInput`, `tool_mode=True`)  \n   JSON-строка со структурированным результатом от LLM.\n2. `snapshot_id` (необязательный, `MessageTextInput`, `tool_mode=True`)  \n   Если пустой — компонент сам генерирует UUID.\n3. `database_url` (обязательный, `MessageTextInput`, `advanced=True`)  \n   Значение по умолчанию: `sqlite:////tmp/credit_products.db`\n\n## Выход компонента\n\n- Один action-метод: `save_credit_snapshot`\n- Возвращаемый тип: `Data`\n- В `Data.data` обязательно положить:\n  - `status`: `ok | invalid_json | error`\n  - `snapshot_id`: `string | null`\n  - `inserted_rows`: `int`\n  - `errors`: `string[]`\n  - `text`: JSON-строка с тем же payload (для удобного показа в логах/чате)\n\n## Ожидаемая структура входного JSON (`record_json`)\n\n```json\n{\n  \"run_summary\": {\n    \"topic\": \"string|null\",\n    \"generated_at\": \"string|null\"\n  },\n  \"banks\": [\n    {\n      \"bank\": \"string\",\n      \"product\": \"string|null\",\n      \"rate\": \"any\",\n      \"apr_psk\": \"any\",\n      \"max_amount\": \"any\",\n      \"term\": \"any\",\n      \"special_conditions\": [],\n      \"source_url\": \"string\",\n      \"confidence\": \"string\",\n      \"missing_fields\": []\n    }\n  ],\n  \"comparison\": {\n    \"best_rate_hint\": \"string|null\",\n    \"notes\": []\n  }\n}\n```\n\n## Валидация\n\nМинимальные правила:\n- JSON должен парситься.\n- Top-level объект.\n- Обязательные ключи верхнего уровня: `run_summary`, `banks`, `comparison`.\n- `banks` — непустой массив.\n- Для каждого элемента в `banks` обязательны:\n  - `bank` (непустая строка)\n  - `source_url` (непустая строка)\n  - `confidence` (непустая строка)\n",
+            "display_name": "",
+            "documentation": "",
+            "template": {}
+          },
+          "type": "note"
+        },
+        "dragging": false,
+        "id": "note-R5Xas",
+        "measured": {
+          "height": 2412,
+          "width": 575
+        },
+        "position": {
+          "x": -2501.9164984695253,
+          "y": 18.910902547451826
+        },
+        "selected": false,
+        "type": "noteNode"
+      },
+      {
+        "data": {
+          "id": "note-BPisT",
+          "node": {
+            "description": "## Советы:\nДавайте DeepSeek или Claude ссылки на langflow или просите посмотреть примеры в Context7",
+            "display_name": "",
+            "documentation": "",
+            "template": {}
+          },
+          "type": "note"
+        },
+        "id": "note-BPisT",
+        "measured": {
+          "height": 324,
+          "width": 575
+        },
+        "position": {
+          "x": -1857.868192403335,
+          "y": 400.2015541850212
+        },
+        "selected": false,
+        "type": "noteNode"
+      },
+      {
+        "data": {
+          "id": "note-8IWYL",
+          "node": {
+            "description": "При нарушении:\n- `status=invalid_json`\n- `inserted_rows=0`\n- `errors` содержит детальные сообщения по каждому нарушению.\n\n## Логика записи в БД\n\n- Поддержать только SQLite.\n- Нормализовать путь из `database_url` формата `sqlite:///...`.\n- Создать директорию, если не существует.\n- Подключиться через `sqlite3`.\n- Создать таблицу при необходимости:\n\n```sql\nCREATE TABLE IF NOT EXISTS credit_product_snapshots (\n  id INTEGER PRIMARY KEY AUTOINCREMENT,\n  snapshot_id TEXT NOT NULL,\n  topic TEXT,\n  generated_at TEXT,\n  bank TEXT,\n  product TEXT,\n  rate TEXT,\n  apr_psk TEXT,\n  max_amount TEXT,\n  term TEXT,\n  special_conditions TEXT,\n  source_url TEXT,\n  confidence TEXT,\n  missing_fields TEXT,\n  raw_record TEXT,\n  created_at TEXT NOT NULL\n);\n```\n\n- Для каждого элемента `banks[]` вставить строку.\n- Поля со сложными типами сериализовать через `json.dumps(..., ensure_ascii=False)`.\n- `created_at` ставить в UTC ISO-формате.\n\n## Поведение при ошибках\n\n- Любая ошибка парсинга JSON -> `invalid_json`.\n- Любая ошибка БД/IO -> `error`.\n- Исключения наружу не пробрасывать; всегда возвращать структурированный ответ.\n\n## Критерии приемки\n\n1. Пустой `record_json` -> `invalid_json`.\n2. Битый JSON -> `invalid_json`.\n3. JSON без `banks` -> `invalid_json`.\n4. Валидный JSON с 4 банками -> `ok`, `inserted_rows=4`.\n5. После успешной записи в SQLite таблица существует, строки добавлены.\n\n## Что нужно выдать в ответ\n\n1. Полный Python-код компонента (готовый к вставке в LangFlow Custom Component).\n2. Короткую инструкцию, как подключить компонент в `agent.tools`.\n3. 3 тестовых payload:\n   - валидный,\n   - невалидный (битый JSON),\n   - невалидный (нет обязательных полей).\n",
+            "display_name": "",
+            "documentation": "",
+            "template": {}
+          },
+          "type": "note"
+        },
+        "dragging": false,
+        "id": "note-8IWYL",
+        "measured": {
+          "height": 1724,
+          "width": 575
+        },
+        "position": {
+          "x": -2497.2272393721782,
+          "y": 2466.219714624864
         },
         "selected": false,
         "type": "noteNode"
       }
     ],
     "viewport": {
-      "x": 976.2105312553158,
-      "y": -184.64167027480926,
-      "zoom": 0.49114930376724114
+      "x": 1865.489366486911,
+      "y": -1630.4126662061149,
+      "zoom": 0.6857952633352314
     }
   },
   "description": "Шаг 6: агент с двумя tool (Search + DB Writer) и тестовый полигон для прямой проверки кастомной DB tool через Text Input.",

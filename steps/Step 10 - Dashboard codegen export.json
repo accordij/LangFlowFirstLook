@@ -7,7 +7,7 @@
         "data": {
           "sourceHandle": {
             "dataType": "ChatInput",
-            "id": "ChatInput-D41Mm",
+            "id": "ChatInput-rRhpq",
             "name": "message",
             "output_types": [
               "Message"
@@ -15,19 +15,19 @@
           },
           "targetHandle": {
             "fieldName": "input_value",
-            "id": "GigaChatAgent-UTSzR",
+            "id": "GigaChatAgent-T72CP",
             "inputTypes": [
               "Message"
             ],
             "type": "str"
           }
         },
-        "id": "reactflow__edge-ChatInput-D41Mm{œdataTypeœ:œChatInputœ,œidœ:œChatInput-D41Mmœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-GigaChatAgent-UTSzR{œfieldNameœ:œinput_valueœ,œidœ:œGigaChatAgent-UTSzRœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "id": "reactflow__edge-ChatInput-rRhpq{œdataTypeœ:œChatInputœ,œidœ:œChatInput-rRhpqœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-GigaChatAgent-T72CP{œfieldNameœ:œinput_valueœ,œidœ:œGigaChatAgent-T72CPœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
         "selected": false,
-        "source": "ChatInput-D41Mm",
-        "sourceHandle": "{œdataTypeœ:œChatInputœ,œidœ:œChatInput-D41Mmœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "GigaChatAgent-UTSzR",
-        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œGigaChatAgent-UTSzRœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+        "source": "ChatInput-rRhpq",
+        "sourceHandle": "{œdataTypeœ:œChatInputœ,œidœ:œChatInput-rRhpqœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "GigaChatAgent-T72CP",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œGigaChatAgent-T72CPœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
       },
       {
         "animated": false,
@@ -35,7 +35,7 @@
         "data": {
           "sourceHandle": {
             "dataType": "SearchPlugin",
-            "id": "SearchPlugin-f92A5",
+            "id": "SearchPlugin-36ISV",
             "name": "component_as_tool",
             "output_types": [
               "Tool"
@@ -43,19 +43,19 @@
           },
           "targetHandle": {
             "fieldName": "tools",
-            "id": "GigaChatAgent-UTSzR",
+            "id": "GigaChatAgent-T72CP",
             "inputTypes": [
               "Tool"
             ],
             "type": "other"
           }
         },
-        "id": "reactflow__edge-SearchPlugin-f92A5{œdataTypeœ:œSearchPluginœ,œidœ:œSearchPlugin-f92A5œ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}-GigaChatAgent-UTSzR{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-UTSzRœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}",
+        "id": "reactflow__edge-SearchPlugin-36ISV{œdataTypeœ:œSearchPluginœ,œidœ:œSearchPlugin-36ISVœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}-GigaChatAgent-T72CP{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-T72CPœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}",
         "selected": false,
-        "source": "SearchPlugin-f92A5",
-        "sourceHandle": "{œdataTypeœ:œSearchPluginœ,œidœ:œSearchPlugin-f92A5œ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}",
-        "target": "GigaChatAgent-UTSzR",
-        "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-UTSzRœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
+        "source": "SearchPlugin-36ISV",
+        "sourceHandle": "{œdataTypeœ:œSearchPluginœ,œidœ:œSearchPlugin-36ISVœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}",
+        "target": "GigaChatAgent-T72CP",
+        "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-T72CPœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
       },
       {
         "animated": false,
@@ -63,7 +63,7 @@
         "data": {
           "sourceHandle": {
             "dataType": "CreditSnapshotDBTool",
-            "id": "CreditSnapshotDBTool-sC3zq",
+            "id": "CreditSnapshotDBTool-6Cgqe",
             "name": "component_as_tool",
             "output_types": [
               "Tool"
@@ -71,19 +71,19 @@
           },
           "targetHandle": {
             "fieldName": "tools",
-            "id": "GigaChatAgent-UTSzR",
+            "id": "GigaChatAgent-T72CP",
             "inputTypes": [
               "Tool"
             ],
             "type": "other"
           }
         },
-        "id": "reactflow__edge-CreditSnapshotDBTool-sC3zq{œdataTypeœ:œCreditSnapshotDBToolœ,œidœ:œCreditSnapshotDBTool-sC3zqœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}-GigaChatAgent-UTSzR{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-UTSzRœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}",
+        "id": "reactflow__edge-CreditSnapshotDBTool-6Cgqe{œdataTypeœ:œCreditSnapshotDBToolœ,œidœ:œCreditSnapshotDBTool-6Cgqeœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}-GigaChatAgent-T72CP{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-T72CPœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}",
         "selected": false,
-        "source": "CreditSnapshotDBTool-sC3zq",
-        "sourceHandle": "{œdataTypeœ:œCreditSnapshotDBToolœ,œidœ:œCreditSnapshotDBTool-sC3zqœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}",
-        "target": "GigaChatAgent-UTSzR",
-        "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-UTSzRœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
+        "source": "CreditSnapshotDBTool-6Cgqe",
+        "sourceHandle": "{œdataTypeœ:œCreditSnapshotDBToolœ,œidœ:œCreditSnapshotDBTool-6Cgqeœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}",
+        "target": "GigaChatAgent-T72CP",
+        "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-T72CPœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
       },
       {
         "animated": false,
@@ -91,7 +91,7 @@
         "data": {
           "sourceHandle": {
             "dataType": "GigaChatAgent",
-            "id": "GigaChatAgent-UTSzR",
+            "id": "GigaChatAgent-T72CP",
             "name": "response",
             "output_types": [
               "Message"
@@ -99,7 +99,7 @@
           },
           "targetHandle": {
             "fieldName": "input_value",
-            "id": "ChatOutput-k51sr",
+            "id": "ChatOutput-ajWFC",
             "inputTypes": [
               "Data",
               "DataFrame",
@@ -108,40 +108,12 @@
             "type": "other"
           }
         },
-        "id": "reactflow__edge-GigaChatAgent-UTSzR{œdataTypeœ:œGigaChatAgentœ,œidœ:œGigaChatAgent-UTSzRœ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}-ChatOutput-k51sr{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-k51srœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}",
+        "id": "reactflow__edge-GigaChatAgent-T72CP{œdataTypeœ:œGigaChatAgentœ,œidœ:œGigaChatAgent-T72CPœ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}-ChatOutput-ajWFC{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-ajWFCœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}",
         "selected": false,
-        "source": "GigaChatAgent-UTSzR",
-        "sourceHandle": "{œdataTypeœ:œGigaChatAgentœ,œidœ:œGigaChatAgent-UTSzRœ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "ChatOutput-k51sr",
-        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-k51srœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "SQLComponent",
-            "id": "SQLComponent-step8Raw",
-            "name": "run_sql_query",
-            "output_types": [
-              "DataFrame"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "tools",
-            "id": "GigaChatAgent-UTSzR",
-            "inputTypes": [
-              "Tool"
-            ],
-            "type": "other"
-          }
-        },
-        "id": "edge-step8-sql-to-agent-tools",
-        "selected": false,
-        "source": "SQLComponent-step8Raw",
-        "sourceHandle": "{œdataTypeœ:œSQLComponentœ,œidœ:œSQLComponent-step8Rawœ,œnameœ:œrun_sql_queryœ,œoutput_typesœ:[œDataFrameœ]}",
-        "target": "GigaChatAgent-UTSzR",
-        "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-UTSzRœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
+        "source": "GigaChatAgent-T72CP",
+        "sourceHandle": "{œdataTypeœ:œGigaChatAgentœ,œidœ:œGigaChatAgent-T72CPœ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "ChatOutput-ajWFC",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-ajWFCœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}"
       },
       {
         "animated": false,
@@ -149,7 +121,7 @@
         "data": {
           "sourceHandle": {
             "dataType": "CreditMarketAnalyticsTool",
-            "id": "CreditMarketAnalyticsTool-step8",
+            "id": "CreditMarketAnalyticsTool-gFQ4Y",
             "name": "component_as_tool",
             "output_types": [
               "Tool"
@@ -157,27 +129,27 @@
           },
           "targetHandle": {
             "fieldName": "tools",
-            "id": "GigaChatAgent-UTSzR",
+            "id": "GigaChatAgent-T72CP",
             "inputTypes": [
               "Tool"
             ],
             "type": "other"
           }
         },
-        "id": "edge-step8-analytics-to-agent-tools",
+        "id": "reactflow__edge-CreditMarketAnalyticsTool-gFQ4Y{œdataTypeœ:œCreditMarketAnalyticsToolœ,œidœ:œCreditMarketAnalyticsTool-gFQ4Yœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}-GigaChatAgent-T72CP{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-T72CPœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}",
         "selected": false,
-        "source": "CreditMarketAnalyticsTool-step8",
-        "sourceHandle": "{œdataTypeœ:œCreditMarketAnalyticsToolœ,œidœ:œCreditMarketAnalyticsTool-step8œ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}",
-        "target": "GigaChatAgent-UTSzR",
-        "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-UTSzRœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
+        "source": "CreditMarketAnalyticsTool-gFQ4Y",
+        "sourceHandle": "{œdataTypeœ:œCreditMarketAnalyticsToolœ,œidœ:œCreditMarketAnalyticsTool-gFQ4Yœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}",
+        "target": "GigaChatAgent-T72CP",
+        "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-T72CPœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
       },
       {
         "animated": false,
         "className": "",
         "data": {
           "sourceHandle": {
-            "dataType": "CreditDashboardCodeExecTool",
-            "id": "CreditDashboardCodeExecTool-step10",
+            "dataType": "CreditDashboardExportTool",
+            "id": "CreditDashboardExportTool-YlfC9",
             "name": "component_as_tool",
             "output_types": [
               "Tool"
@@ -185,25 +157,53 @@
           },
           "targetHandle": {
             "fieldName": "tools",
-            "id": "GigaChatAgent-UTSzR",
+            "id": "GigaChatAgent-T72CP",
             "inputTypes": [
               "Tool"
             ],
             "type": "other"
           }
         },
-        "id": "edge-step9-dashboard-to-agent-tools",
+        "id": "reactflow__edge-CreditDashboardExportTool-YlfC9{œdataTypeœ:œCreditDashboardExportToolœ,œidœ:œCreditDashboardExportTool-YlfC9œ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}-GigaChatAgent-T72CP{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-T72CPœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}",
         "selected": false,
-        "source": "CreditDashboardCodeExecTool-step10",
-        "sourceHandle": "{œdataTypeœ:œCreditDashboardCodeExecToolœ,œidœ:œCreditDashboardCodeExecTool-step10œ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}",
-        "target": "GigaChatAgent-UTSzR",
-        "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-UTSzRœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
+        "source": "CreditDashboardExportTool-YlfC9",
+        "sourceHandle": "{œdataTypeœ:œCreditDashboardExportToolœ,œidœ:œCreditDashboardExportTool-YlfC9œ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}",
+        "target": "GigaChatAgent-T72CP",
+        "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-T72CPœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "SQLComponent",
+            "id": "SQLComponent-eh9HR",
+            "name": "component_as_tool",
+            "output_types": [
+              "Tool"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "tools",
+            "id": "GigaChatAgent-T72CP",
+            "inputTypes": [
+              "Tool"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__SQLComponent-eh9HR{œdataTypeœ:œSQLComponentœ,œidœ:œSQLComponent-eh9HRœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}-GigaChatAgent-T72CP{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-T72CPœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "SQLComponent-eh9HR",
+        "sourceHandle": "{œdataTypeœ:œSQLComponentœ,œidœ:œSQLComponent-eh9HRœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}",
+        "target": "GigaChatAgent-T72CP",
+        "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-T72CPœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
       }
     ],
     "nodes": [
       {
         "data": {
-          "id": "ChatInput-D41Mm",
+          "id": "ChatInput-rRhpq",
           "node": {
             "base_classes": [
               "Message"
@@ -503,7 +503,7 @@
           "type": "ChatInput"
         },
         "dragging": false,
-        "id": "ChatInput-D41Mm",
+        "id": "ChatInput-rRhpq",
         "measured": {
           "height": 208,
           "width": 320
@@ -519,7 +519,7 @@
         "data": {
           "description": "Define the agent's instructions, then enter a task to complete using tools.",
           "display_name": "GigaChat Agent",
-          "id": "GigaChatAgent-UTSzR",
+          "id": "GigaChatAgent-T72CP",
           "node": {
             "base_classes": [
               "Message"
@@ -1002,7 +1002,7 @@
                 "tool_mode": false,
                 "trace_as_metadata": true,
                 "type": "str",
-                "value": "GigaChat-2-Pro"
+                "value": "GigaChat-2-Max"
               },
               "n_messages": {
                 "_input_type": "IntInput",
@@ -1446,7 +1446,7 @@
           "type": "GigaChatAgent"
         },
         "dragging": false,
-        "id": "GigaChatAgent-UTSzR",
+        "id": "GigaChatAgent-T72CP",
         "measured": {
           "height": 448,
           "width": 320
@@ -1460,7 +1460,7 @@
       },
       {
         "data": {
-          "id": "SearchPlugin-f92A5",
+          "id": "SearchPlugin-36ISV",
           "node": {
             "base_classes": [
               "Data"
@@ -1483,7 +1483,7 @@
             ],
             "frozen": false,
             "icon": "Search",
-            "last_updated": "2026-04-13T11:54:31.116Z",
+            "last_updated": "2026-04-16T09:16:31.295Z",
             "legacy": false,
             "lf_version": "1.5.0.post1",
             "metadata": {},
@@ -1708,7 +1708,7 @@
           "type": "SearchPlugin"
         },
         "dragging": false,
-        "id": "SearchPlugin-f92A5",
+        "id": "SearchPlugin-36ISV",
         "measured": {
           "height": 223,
           "width": 320
@@ -1722,7 +1722,7 @@
       },
       {
         "data": {
-          "id": "CreditSnapshotDBTool-sC3zq",
+          "id": "CreditSnapshotDBTool-6Cgqe",
           "node": {
             "base_classes": [
               "Data"
@@ -1741,7 +1741,7 @@
             ],
             "frozen": false,
             "icon": "database",
-            "last_updated": "2026-04-13T11:54:31.117Z",
+            "last_updated": "2026-04-16T09:16:31.296Z",
             "legacy": false,
             "lf_version": "1.5.0.post1",
             "metadata": {},
@@ -1907,7 +1907,7 @@
           "type": "CreditSnapshotDBTool"
         },
         "dragging": false,
-        "id": "CreditSnapshotDBTool-sC3zq",
+        "id": "CreditSnapshotDBTool-6Cgqe",
         "measured": {
           "height": 223,
           "width": 320
@@ -1921,7 +1921,7 @@
       },
       {
         "data": {
-          "id": "ChatOutput-k51sr",
+          "id": "ChatOutput-ajWFC",
           "node": {
             "base_classes": [
               "Message"
@@ -2217,7 +2217,7 @@
         },
         "dragging": false,
         "height": 233,
-        "id": "ChatOutput-k51sr",
+        "id": "ChatOutput-ajWFC",
         "measured": {
           "height": 233,
           "width": 320
@@ -2236,7 +2236,7 @@
       },
       {
         "data": {
-          "id": "SQLComponent-step8Raw",
+          "id": "SQLComponent-eh9HR",
           "node": {
             "base_classes": [
               "DataFrame"
@@ -2256,6 +2256,7 @@
             ],
             "frozen": false,
             "icon": "database",
+            "last_updated": "2026-04-16T09:16:31.297Z",
             "legacy": false,
             "lf_version": "1.5.0.post1",
             "metadata": {
@@ -2273,14 +2274,17 @@
               {
                 "allows_loop": false,
                 "cache": true,
-                "display_name": "Result Table",
+                "display_name": "Toolset",
                 "group_outputs": false,
-                "method": "run_sql_query",
-                "name": "run_sql_query",
-                "selected": "DataFrame",
+                "hidden": null,
+                "method": "to_toolkit",
+                "name": "component_as_tool",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Tool",
                 "tool_mode": true,
                 "types": [
-                  "DataFrame"
+                  "Tool"
                 ],
                 "value": "__UNDEFINED__"
               }
@@ -2389,29 +2393,79 @@
                 "trace_as_metadata": true,
                 "type": "str",
                 "value": "SELECT generated_at, bank, rate, apr_psk, max_amount, confidence FROM credit_product_snapshots ORDER BY generated_at DESC, bank LIMIT 32;"
+              },
+              "tools_metadata": {
+                "_input_type": "ToolsInput",
+                "advanced": false,
+                "display_name": "Actions",
+                "dynamic": false,
+                "info": "Modify tool names and descriptions to help agents understand when to use each tool.",
+                "is_list": true,
+                "list_add_label": "Add More",
+                "name": "tools_metadata",
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "tools",
+                "value": [
+                  {
+                    "args": {
+                      "add_error": {
+                        "default": false,
+                        "description": "If True, the error will be added to the result",
+                        "title": "Add Error",
+                        "type": "boolean"
+                      },
+                      "include_columns": {
+                        "default": true,
+                        "description": "",
+                        "title": "Include Columns",
+                        "type": "boolean"
+                      },
+                      "query": {
+                        "description": "",
+                        "title": "Query",
+                        "type": "string"
+                      }
+                    },
+                    "description": "Executes SQL queries on SQLAlchemy-compatible databases.",
+                    "display_description": "Executes SQL queries on SQLAlchemy-compatible databases.",
+                    "display_name": "run_sql_query",
+                    "name": "run_sql_query",
+                    "readonly": false,
+                    "status": true,
+                    "tags": [
+                      "run_sql_query"
+                    ]
+                  }
+                ]
               }
             },
-            "tool_mode": false
+            "tool_mode": true
           },
           "showNode": true,
           "type": "SQLComponent"
         },
         "dragging": false,
-        "id": "SQLComponent-step8Raw",
+        "id": "SQLComponent-eh9HR",
         "measured": {
-          "height": 306,
+          "height": 304,
           "width": 320
         },
         "position": {
-          "x": -170,
-          "y": 505
+          "x": 227.84682288660701,
+          "y": 708.6372363590216
         },
         "selected": false,
         "type": "genericNode"
       },
       {
         "data": {
-          "id": "CreditMarketAnalyticsTool-step8",
+          "id": "CreditMarketAnalyticsTool-gFQ4Y",
           "node": {
             "base_classes": [
               "Data"
@@ -2430,7 +2484,7 @@
             ],
             "frozen": false,
             "icon": "database",
-            "last_updated": "2026-04-13T11:54:31.117Z",
+            "last_updated": "2026-04-16T09:16:31.297Z",
             "legacy": false,
             "lf_version": "1.5.0.post1",
             "metadata": {},
@@ -2596,9 +2650,9 @@
           "type": "CreditMarketAnalyticsTool"
         },
         "dragging": false,
-        "id": "CreditMarketAnalyticsTool-step8",
+        "id": "CreditMarketAnalyticsTool-gFQ4Y",
         "measured": {
-          "height": 223,
+          "height": 239,
           "width": 320
         },
         "position": {
@@ -2610,7 +2664,7 @@
       },
       {
         "data": {
-          "id": "CreditDashboardCodeExecTool-step10",
+          "id": "CreditDashboardExportTool-YlfC9",
           "node": {
             "base_classes": [
               "Data"
@@ -2630,7 +2684,7 @@
             ],
             "frozen": false,
             "icon": "database",
-            "last_updated": "2026-04-13T11:54:31.117Z",
+            "last_updated": "2026-04-16T09:16:31.299Z",
             "legacy": false,
             "lf_version": "1.5.0.post1",
             "metadata": {},
@@ -2659,6 +2713,29 @@
             "pinned": false,
             "template": {
               "_type": "Component",
+              "chart_code": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Chart Code (JS)",
+                "dynamic": false,
+                "info": "JavaScript: async function renderDashboard(payload, Plotly, containers). Обязательно: 2+ Plotly.newPlot и fallback, если traces пустые. Используй payload.traces_rate/traces_amount/summary, затем records/sample_rows. Передавать ТОЛЬКО в tool, не в чат.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "chart_code",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
               "code": {
                 "advanced": true,
                 "dynamic": true,
@@ -2675,7 +2752,7 @@
                 "show": true,
                 "title_case": false,
                 "type": "code",
-                "value": "\"\"\"Tool: LLM-generated Plotly dashboard (step 10 code exec).\"\"\"\n\nfrom __future__ import annotations\n\nimport json\nimport re\nimport sqlite3\nimport subprocess\nimport tempfile\nfrom datetime import datetime, timezone\nfrom pathlib import Path\n\nfrom fastapi import UploadFile\nfrom langflow.api.v2.files import upload_user_file\nfrom langflow.custom import Component\nfrom langflow.io import MessageTextInput, Output\nfrom langflow.schema import Data\nfrom langflow.services.database.models.user.crud import get_user_by_id\nfrom langflow.services.deps import get_session, get_settings_service, get_storage_service\n\n\nclass CreditDashboardCodeExecTool(Component):\n    display_name = \"Credit Dashboard Code Exec Tool\"\n    description = \"Runs agent-generated Plotly JS (renderDashboard) and exports HTML + upload.\"\n    icon = \"line-chart\"\n    name = \"CreditDashboardCodeExecTool\"\n\n    inputs = [\n        MessageTextInput(\n            name=\"record_json\",\n            display_name=\"Chart Intent\",\n            info=\"Short description of what to visualize (for the agent, optional).\",\n            required=False,\n            tool_mode=True,\n            value=\"\",\n        ),\n        MessageTextInput(\n            name=\"chart_code\",\n            display_name=\"Chart Code (JS)\",\n            info=(\n                \"JavaScript only. Must define: async function renderDashboard(payload, Plotly, containers) { ... }\"\n            ),\n            required=True,\n            tool_mode=True,\n            value=\"\",\n        ),\n        MessageTextInput(\n            name=\"snapshot_id\",\n            display_name=\"Output Filename\",\n            info=\"HTML filename. Default: credit_dashboard_step10.html\",\n            required=False,\n            tool_mode=True,\n            advanced=True,\n            value=\"credit_dashboard_step10.html\",\n        ),\n        MessageTextInput(\n            name=\"database_url\",\n            display_name=\"Database URL\",\n            info=\"SQLite URL like sqlite:////tmp/credit_products.db\",\n            value=\"sqlite:////tmp/credit_products.db\",\n            required=True,\n            advanced=True,\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"Dashboard Export\", name=\"export_credit_dashboard\", method=\"export_credit_dashboard\"),\n    ]\n\n    async def export_credit_dashboard(self) -> Data:\n        db_path = self._sqlite_path(self.database_url)\n        if not db_path.exists():\n            return self._result(\"error\", errors=[f\"Database file not found: {db_path}\"])\n\n        rows = self._load_rows(db_path)\n        if not rows:\n            return self._result(\"error\", errors=[\"No rows found in credit_product_snapshots\"])\n\n        code = self._strip_markdown_fences((self.chart_code or \"\").strip())\n        if not code:\n            return self._result(\"invalid_code\", errors=[\"chart_code is empty\"])\n\n        validation_errors = self._validate_js_code(code)\n        if validation_errors:\n            return self._result(\"invalid_code\", errors=validation_errors)\n\n        syntax_ok, syntax_error = self._check_js_syntax(code)\n        if not syntax_ok:\n            return self._result(\"invalid_code\", errors=[f\"JavaScript syntax error: {syntax_error}\"])\n\n        filename = self._normalized_filename(self.snapshot_id)\n        out_path = self._resolve_output_path(filename)\n\n        payload = self._build_payload(rows)\n        html = self._build_html(payload, code)\n        out_path.write_text(html, encoding=\"utf-8\")\n        await self._upload_file(out_path)\n\n        result = {\n            \"status\": \"ok\",\n            \"file_path\": str(out_path),\n            \"rows_used\": len(rows),\n            \"generated_at\": datetime.now(timezone.utc).isoformat(),\n            \"errors\": [],\n        }\n        self.status = result\n        return Data(data={\"text\": json.dumps(result, ensure_ascii=False), **result})\n\n    def _build_payload(self, rows: list[dict]) -> dict:\n        normalized_rows = [\n            {k: self._normalize_cell(v) for k, v in row.items()}\n            for row in rows\n        ]\n        chart_rows = [self._to_chart_row(row) for row in normalized_rows]\n        columns = sorted({key for row in chart_rows for key in row.keys()})\n        sample_rows = chart_rows[:12]\n        profile = {\"column_count\": len(columns), \"columns\": columns}\n\n        bank_map: dict[str, dict] = {}\n        dates = sorted(\n            {\n                str(r.get(\"generated_at\"))\n                for r in normalized_rows\n                if r.get(\"generated_at\") is not None and str(r.get(\"generated_at\")).strip()\n            }\n        )\n\n        for row in chart_rows:\n            bank = str(row.get(\"bank\") or \"\").strip()\n            date_value = str(row.get(\"generated_at\") or \"\").strip()\n            if not bank or not date_value:\n                continue\n            if bank not in bank_map:\n                bank_map[bank] = {\"rate\": {}, \"max_amount\": {}}\n            bank_map[bank][\"rate\"][date_value] = row.get(\"rate_num\")\n            bank_map[bank][\"max_amount\"][date_value] = row.get(\"max_amount_num\")\n\n        banks = sorted(bank_map.keys())\n        traces_rate = []\n        traces_amount = []\n        summary = []\n\n        for bank in banks:\n            y_rate = [bank_map[bank][\"rate\"].get(d) for d in dates]\n            y_amount = [bank_map[bank][\"max_amount\"].get(d) for d in dates]\n            traces_rate.append({\"name\": bank, \"x\": dates, \"y\": y_rate})\n            traces_amount.append({\"name\": bank, \"x\": dates, \"y\": y_amount})\n\n            first_rate = next((v for v in y_rate if v is not None), None)\n            last_rate = next((v for v in reversed(y_rate) if v is not None), None)\n            first_amt = next((v for v in y_amount if v is not None), None)\n            last_amt = next((v for v in reversed(y_amount) if v is not None), None)\n\n            summary.append(\n                {\n                    \"bank\": bank,\n                    \"rate_first\": first_rate,\n                    \"rate_last\": last_rate,\n                    \"rate_delta_pp\": (last_rate - first_rate)\n                    if first_rate is not None and last_rate is not None\n                    else None,\n                    \"amount_first\": first_amt,\n                    \"amount_last\": last_amt,\n                    \"amount_delta\": (last_amt - first_amt)\n                    if first_amt is not None and last_amt is not None\n                    else None,\n                }\n            )\n\n        return {\n            \"columns\": columns,\n            \"records\": chart_rows,\n            \"sample_rows\": sample_rows,\n            \"records_raw\": normalized_rows,\n            \"profile\": profile,\n            \"suggested_charts\": [\n                {\"id\": \"line_timeseries\", \"x_hint\": \"generated_at\", \"y_hint\": \"rate_num\", \"group_hint\": \"bank\"},\n                {\"id\": \"line_amount\", \"x_hint\": \"generated_at\", \"y_hint\": \"max_amount_num\", \"group_hint\": \"bank\"},\n                {\"id\": \"bar_compare\", \"x_hint\": \"bank\", \"y_hint\": \"max_amount_num\", \"aggregation\": \"last\"}\n            ],\n            \"dates\": dates,\n            \"traces_rate\": traces_rate,\n            \"traces_amount\": traces_amount,\n            \"summary\": summary,\n        }\n\n    def _build_html(self, payload: dict, chart_code: str) -> str:\n        payload_json = json.dumps(payload, ensure_ascii=False)\n        safe_code = chart_code.replace(\"</script>\", \"<\\\\/script>\")\n\n        return f\"\"\"<!doctype html>\n<html lang=\"ru\">\n<head>\n  <meta charset=\"utf-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n  <title>Credit Dashboard (LLM Codegen)</title>\n  <script src=\"https://cdn.plot.ly/plotly-2.35.2.min.js\"></script>\n  <style>\n    body {{ font-family: Arial, sans-serif; margin: 20px; background: #f7f8fb; color: #222; }}\n    .card {{ background: white; padding: 14px; border-radius: 12px;\n      box-shadow: 0 1px 4px rgba(0,0,0,.08); margin-bottom: 14px; }}\n  </style>\n</head>\n<body>\n  <h1>Credit Dashboard (LLM-generated)</h1>\n  <div id=\"chartA\" class=\"card\" style=\"height:420px;\"></div>\n  <div id=\"chartB\" class=\"card\" style=\"height:420px;\"></div>\n  <div id=\"chartC\" class=\"card\" style=\"height:420px;\"></div>\n\n  <script>\n    const payload = {payload_json};\n    const containers = {{\n      chartA: \"chartA\",\n      chartB: \"chartB\",\n      chartC: \"chartC\"\n    }};\n  </script>\n\n  <script>\n{safe_code}\n  </script>\n\n  <script>\n    (async () => {{\n      try {{\n        if (typeof renderDashboard !== \"function\") {{\n          throw new Error(\n            \"chart_code must define async function renderDashboard(payload, Plotly, containers)\"\n          );\n        }}\n        await renderDashboard(payload, Plotly, containers);\n      }} catch (e) {{\n        const msg = \"Dashboard render error: \" + String(e && e.message ? e.message : e);\n        document.body.insertAdjacentHTML(\"beforeend\", \"<pre style=\\\\\"color:#b91c1c;\\\\\">\" + msg + \"</pre>\");\n      }}\n    }})();\n  </script>\n</body>\n</html>\"\"\"\n\n    def _strip_markdown_fences(self, code: str) -> str:\n        if code.startswith(\"```\"):\n            lines = code.splitlines()\n            if lines and lines[0].startswith(\"```\"):\n                lines = lines[1:]\n            if lines and lines[-1].strip() == \"```\":\n                lines = lines[:-1]\n            return \"\\n\".join(lines).strip()\n        return code\n    def _validate_js_code(self, code: str) -> list[str]:\n        errors: list[str] = []\n\n        if len(code) > 50000:\n            errors.append(\"chart_code is too long (>50000 chars)\")\n\n        if \"renderDashboard\" not in code:\n            errors.append(\"chart_code must define renderDashboard referencing payload, Plotly, containers\")\n\n        plot_calls = code.count(\"Plotly.newPlot(\")\n        if plot_calls < 2:\n            errors.append(\"chart_code must contain at least 2 Plotly.newPlot(...) calls\")\n\n        banned_patterns = [\n            r\"\\beval\\s*\\(\",\n            r\"\\bFunction\\s*\\(\",\n            r\"\\bfetch\\s*\\(\",\n            r\"\\bXMLHttpRequest\\b\",\n            r\"\\bdocument\\.cookie\\b\",\n            r\"\\blocalStorage\\b\",\n            r\"\\bsessionStorage\\b\",\n            r\"\\bwindow\\.location\\b\",\n            r\"\\bimport\\s*\\(\",\n            r\"\\brequire\\s*\\(\",\n            r\"\\bprocess\\.\",\n        ]\n        for pattern in banned_patterns:\n            if re.search(pattern, code):\n                errors.append(f\"disallowed pattern: {pattern}\")\n\n        return errors\n\n    def _check_js_syntax(self, code: str) -> tuple[bool, str]:\n        try:\n            with tempfile.NamedTemporaryFile(\"w\", suffix=\".mjs\", delete=False, encoding=\"utf-8\") as tmp:\n                tmp.write(code)\n                tmp_path = Path(tmp.name)\n            result = subprocess.run(\n                [\"node\", \"--check\", str(tmp_path)],\n                capture_output=True,\n                text=True,\n                timeout=12,\n                check=False,\n            )\n            try:\n                tmp_path.unlink(missing_ok=True)\n            except OSError:\n                pass\n\n            if result.returncode == 0:\n                return True, \"\"\n            err = (result.stderr or result.stdout or \"node --check error\").strip()\n            return False, err\n        except FileNotFoundError:\n            return True, \"\"\n        except Exception as exc:\n            return False, str(exc)\n\n    async def _upload_file(self, file_path: Path) -> None:\n        if not file_path.exists():\n            raise FileNotFoundError(f\"File not found: {file_path}\")\n\n        with file_path.open(\"rb\") as f:\n            async for db in get_session():\n                current_user = await get_user_by_id(db, self.user_id)\n                await upload_user_file(\n                    file=UploadFile(filename=file_path.name, file=f, size=file_path.stat().st_size),\n                    session=db,\n                    current_user=current_user,\n                    storage_service=get_storage_service(),\n                    settings_service=get_settings_service(),\n                )\n                break\n\n    def _load_rows(self, db_path: Path) -> list[dict]:\n        query = \"\"\"\n            SELECT *\n            FROM credit_product_snapshots\n            ORDER BY COALESCE(created_at, generated_at) ASC, id ASC\n            LIMIT 2000\n        \"\"\"\n        with sqlite3.connect(db_path) as conn:\n            conn.row_factory = sqlite3.Row\n            rows = conn.execute(query).fetchall()\n        return [dict(r) for r in rows]\n\n    def _sqlite_path(self, url: str) -> Path:\n        raw = (url or \"\").strip()\n        if raw.startswith(\"sqlite:///\"):\n            return Path(raw.replace(\"sqlite:///\", \"\", 1))\n        return Path(raw)\n\n    def _normalized_filename(self, raw_name: str | None) -> str:\n        filename = (raw_name or \"credit_dashboard_step10.html\").strip() or \"credit_dashboard_step10.html\"\n        if not filename.lower().endswith(\".html\"):\n            filename += \".html\"\n        return re.sub(r\"[^a-zA-Z0-9._-]\", \"_\", filename)\n\n    def _resolve_output_path(self, filename: str) -> Path:\n        flow_id = getattr(self, \"flow_id\", None)\n        safe_flow = str(flow_id).strip().replace(\"/\", \"_\") if flow_id else \"\"\n        base_dir = Path(\"/tmp\")\n        target_dir = base_dir / safe_flow if safe_flow else base_dir\n        target_dir.mkdir(parents=True, exist_ok=True)\n        return target_dir / filename\n\n    def _to_chart_row(self, row: dict) -> dict:\n        out = dict(row)\n        out[\"rate_raw\"] = row.get(\"rate\")\n        out[\"max_amount_raw\"] = row.get(\"max_amount\")\n        out[\"rate_num\"] = self._extract_percent(row.get(\"rate\"))\n        out[\"max_amount_num\"] = self._extract_number(row.get(\"max_amount\"))\n        # Make generic access safer for naive LLM-generated JS.\n        out[\"rate\"] = out[\"rate_num\"]\n        out[\"max_amount\"] = out[\"max_amount_num\"]\n        return out\n\n    def _normalize_cell(self, value):\n        if not isinstance(value, str):\n            return value\n        text = value.strip()\n        if not text:\n            return text\n\n        # Try decoding values that were json-dumped before writing to DB.\n        try:\n            decoded = json.loads(text)\n            if isinstance(decoded, (str, int, float, bool)) or decoded is None:\n                return decoded\n        except Exception:\n            pass\n\n        if len(text) >= 2 and ((text[0] == '\"' and text[-1] == '\"') or (text[0] == \"'\" and text[-1] == \"'\")):\n            return text[1:-1]\n        return text\n\n    def _extract_percent(self, value: str | None):\n        if value is None:\n            return None\n        match = re.search(r\"(\\d+(?:[.,]\\d+)?)\", str(value))\n        return float(match.group(1).replace(\",\", \".\")) if match else None\n\n    def _extract_number(self, value: str | None):\n        if value is None:\n            return None\n        match = re.search(r\"(\\d+)\", str(value).replace(\" \", \"\"))\n        return float(match.group(1)) if match else None\n\n    def _result(self, status: str, errors: list[str] | None = None) -> Data:\n        payload = {\"status\": status, \"errors\": errors or []}\n        self.status = payload\n        return Data(data={\"text\": json.dumps(payload, ensure_ascii=False), **payload})\n"
+                "value": "\"\"\"Tool: LLM-generated Plotly dashboard (step 10 code exec).\"\"\"\n\nfrom __future__ import annotations\n\nimport json\nimport re\nimport sqlite3\nimport subprocess\nimport tempfile\nfrom datetime import datetime, timezone\nfrom pathlib import Path\n\nfrom fastapi import UploadFile\nfrom langflow.api.v2.files import upload_user_file\nfrom langflow.custom import Component\nfrom langflow.io import MessageTextInput, Output\nfrom langflow.schema import Data\nfrom langflow.services.database.models.user.crud import get_user_by_id\nfrom langflow.services.deps import get_session, get_settings_service, get_storage_service\n\n\nclass CreditDashboardCodeExecTool(Component):\n    display_name = \"Credit Dashboard Code Exec Tool\"\n    description = \"Runs agent-generated Plotly JS (renderDashboard) and exports HTML + upload.\"\n    icon = \"line-chart\"\n    name = \"CreditDashboardCodeExecTool\"\n\n    inputs = [\n        MessageTextInput(\n            name=\"record_json\",\n            display_name=\"Chart Intent\",\n            info=\"Short description of what to visualize (for the agent, optional).\",\n            required=False,\n            tool_mode=True,\n            value=\"\",\n        ),\n        MessageTextInput(\n            name=\"chart_code\",\n            display_name=\"Chart Code (JS)\",\n            info=(\n                \"JavaScript only. Must define: async function renderDashboard(payload, Plotly, containers) { ... }\"\n            ),\n            required=True,\n            tool_mode=True,\n            value=\"\",\n        ),\n        MessageTextInput(\n            name=\"snapshot_id\",\n            display_name=\"Output Filename\",\n            info=\"HTML filename. Default: credit_dashboard_step10.html\",\n            required=False,\n            tool_mode=True,\n            advanced=True,\n            value=\"credit_dashboard_step10.html\",\n        ),\n        MessageTextInput(\n            name=\"database_url\",\n            display_name=\"Database URL\",\n            info=\"SQLite URL like sqlite:////tmp/credit_products.db\",\n            value=\"sqlite:////tmp/credit_products.db\",\n            required=True,\n            advanced=True,\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"Dashboard Export\", name=\"export_credit_dashboard\", method=\"export_credit_dashboard\"),\n    ]\n\n    async def export_credit_dashboard(self) -> Data:\n        db_path = self._sqlite_path(self.database_url)\n        if not db_path.exists():\n            return self._result(\"error\", errors=[f\"Database file not found: {db_path}\"])\n\n        rows = self._load_rows(db_path)\n        if not rows:\n            return self._result(\"error\", errors=[\"No rows found in credit_product_snapshots\"])\n\n        code = self._strip_markdown_fences((self.chart_code or \"\").strip())\n        if not code:\n            return self._result(\"invalid_code\", errors=[\"chart_code is empty\"])\n\n        validation_errors = self._validate_js_code(code)\n        if validation_errors:\n            return self._result(\"invalid_code\", errors=validation_errors)\n\n        syntax_ok, syntax_error = self._check_js_syntax(code)\n        if not syntax_ok:\n            return self._result(\"invalid_code\", errors=[f\"JavaScript syntax error: {syntax_error}\"])\n\n        filename = self._normalized_filename(self.snapshot_id)\n        out_path = self._resolve_output_path(filename)\n\n        payload = self._build_payload(rows)\n        html = self._build_html(payload, code)\n        out_path.write_text(html, encoding=\"utf-8\")\n        await self._upload_file(out_path)\n\n        result = {\n            \"status\": \"ok\",\n            \"file_path\": str(out_path),\n            \"rows_used\": len(rows),\n            \"generated_at\": datetime.now(timezone.utc).isoformat(),\n            \"errors\": [],\n        }\n        self.status = result\n        return Data(data={\"text\": json.dumps(result, ensure_ascii=False), **result})\n\n    def _build_payload(self, rows: list[dict]) -> dict:\n        normalized_rows = [\n            {k: self._normalize_cell(v) for k, v in row.items()}\n            for row in rows\n        ]\n        columns = sorted({key for row in normalized_rows for key in row.keys()})\n        sample_rows = normalized_rows[:12]\n        profile = {\"column_count\": len(columns), \"columns\": columns}\n\n        bank_map: dict[str, dict] = {}\n        dates = sorted(\n            {\n                str(r.get(\"generated_at\"))\n                for r in normalized_rows\n                if r.get(\"generated_at\") is not None and str(r.get(\"generated_at\")).strip()\n            }\n        )\n\n        for row in normalized_rows:\n            bank = str(row.get(\"bank\") or \"\").strip()\n            date_value = str(row.get(\"generated_at\") or \"\").strip()\n            if not bank or not date_value:\n                continue\n            if bank not in bank_map:\n                bank_map[bank] = {\"rate\": {}, \"max_amount\": {}}\n            bank_map[bank][\"rate\"][date_value] = self._extract_percent(row.get(\"rate\"))\n            bank_map[bank][\"max_amount\"][date_value] = self._extract_number(row.get(\"max_amount\"))\n\n        banks = sorted(bank_map.keys())\n        traces_rate = []\n        traces_amount = []\n        summary = []\n\n        for bank in banks:\n            y_rate = [bank_map[bank][\"rate\"].get(d) for d in dates]\n            y_amount = [bank_map[bank][\"max_amount\"].get(d) for d in dates]\n            traces_rate.append({\"name\": bank, \"x\": dates, \"y\": y_rate})\n            traces_amount.append({\"name\": bank, \"x\": dates, \"y\": y_amount})\n\n            first_rate = next((v for v in y_rate if v is not None), None)\n            last_rate = next((v for v in reversed(y_rate) if v is not None), None)\n            first_amt = next((v for v in y_amount if v is not None), None)\n            last_amt = next((v for v in reversed(y_amount) if v is not None), None)\n\n            summary.append(\n                {\n                    \"bank\": bank,\n                    \"rate_first\": first_rate,\n                    \"rate_last\": last_rate,\n                    \"rate_delta_pp\": (last_rate - first_rate)\n                    if first_rate is not None and last_rate is not None\n                    else None,\n                    \"amount_first\": first_amt,\n                    \"amount_last\": last_amt,\n                    \"amount_delta\": (last_amt - first_amt)\n                    if first_amt is not None and last_amt is not None\n                    else None,\n                }\n            )\n\n        return {\n            \"columns\": columns,\n            \"records\": normalized_rows,\n            \"sample_rows\": sample_rows,\n            \"profile\": profile,\n            \"suggested_charts\": [\n                {\"id\": \"line_timeseries\", \"x_hint\": \"generated_at\", \"y_hint\": \"rate\", \"group_hint\": \"bank\"},\n                {\"id\": \"line_amount\", \"x_hint\": \"generated_at\", \"y_hint\": \"max_amount\", \"group_hint\": \"bank\"},\n                {\"id\": \"bar_compare\", \"x_hint\": \"bank\", \"y_hint\": \"max_amount\", \"aggregation\": \"last\"}\n            ],\n            \"dates\": dates,\n            \"traces_rate\": traces_rate,\n            \"traces_amount\": traces_amount,\n            \"summary\": summary,\n        }\n\n    def _build_html(self, payload: dict, chart_code: str) -> str:\n        payload_json = json.dumps(payload, ensure_ascii=False)\n        safe_code = chart_code.replace(\"</script>\", \"<\\\\/script>\")\n\n        return f\"\"\"<!doctype html>\n<html lang=\"ru\">\n<head>\n  <meta charset=\"utf-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n  <title>Credit Dashboard (LLM Codegen)</title>\n  <script src=\"https://cdn.plot.ly/plotly-2.35.2.min.js\"></script>\n  <style>\n    body {{ font-family: Arial, sans-serif; margin: 20px; background: #f7f8fb; color: #222; }}\n    .card {{ background: white; padding: 14px; border-radius: 12px;\n      box-shadow: 0 1px 4px rgba(0,0,0,.08); margin-bottom: 14px; }}\n  </style>\n</head>\n<body>\n  <h1>Credit Dashboard (LLM-generated)</h1>\n  <div id=\"chartA\" class=\"card\" style=\"height:420px;\"></div>\n  <div id=\"chartB\" class=\"card\" style=\"height:420px;\"></div>\n  <div id=\"chartC\" class=\"card\" style=\"height:420px;\"></div>\n\n  <script>\n    const payload = {payload_json};\n    const containers = {{\n      chartA: \"chartA\",\n      chartB: \"chartB\",\n      chartC: \"chartC\"\n    }};\n  </script>\n\n  <script>\n{safe_code}\n  </script>\n\n  <script>\n    (async () => {{\n      try {{\n        if (typeof renderDashboard !== \"function\") {{\n          throw new Error(\n            \"chart_code must define async function renderDashboard(payload, Plotly, containers)\"\n          );\n        }}\n        await renderDashboard(payload, Plotly, containers);\n      }} catch (e) {{\n        const msg = \"Dashboard render error: \" + String(e && e.message ? e.message : e);\n        document.body.insertAdjacentHTML(\"beforeend\", \"<pre style=\\\\\"color:#b91c1c;\\\\\">\" + msg + \"</pre>\");\n      }}\n    }})();\n  </script>\n</body>\n</html>\"\"\"\n\n    def _strip_markdown_fences(self, code: str) -> str:\n        if code.startswith(\"```\"):\n            lines = code.splitlines()\n            if lines and lines[0].startswith(\"```\"):\n                lines = lines[1:]\n            if lines and lines[-1].strip() == \"```\":\n                lines = lines[:-1]\n            return \"\\n\".join(lines).strip()\n        return code\n    def _validate_js_code(self, code: str) -> list[str]:\n        errors: list[str] = []\n\n        if len(code) > 50000:\n            errors.append(\"chart_code is too long (>50000 chars)\")\n\n        if \"renderDashboard\" not in code:\n            errors.append(\"chart_code must define renderDashboard referencing payload, Plotly, containers\")\n\n        plot_calls = code.count(\"Plotly.newPlot(\")\n        if plot_calls < 2:\n            errors.append(\"chart_code must contain at least 2 Plotly.newPlot(...) calls\")\n\n        banned_patterns = [\n            r\"\\beval\\s*\\(\",\n            r\"\\bFunction\\s*\\(\",\n            r\"\\bfetch\\s*\\(\",\n            r\"\\bXMLHttpRequest\\b\",\n            r\"\\bdocument\\.cookie\\b\",\n            r\"\\blocalStorage\\b\",\n            r\"\\bsessionStorage\\b\",\n            r\"\\bwindow\\.location\\b\",\n            r\"\\bimport\\s*\\(\",\n            r\"\\brequire\\s*\\(\",\n            r\"\\bprocess\\.\",\n        ]\n        for pattern in banned_patterns:\n            if re.search(pattern, code):\n                errors.append(f\"disallowed pattern: {pattern}\")\n\n        return errors\n\n    def _check_js_syntax(self, code: str) -> tuple[bool, str]:\n        try:\n            with tempfile.NamedTemporaryFile(\"w\", suffix=\".mjs\", delete=False, encoding=\"utf-8\") as tmp:\n                tmp.write(code)\n                tmp_path = Path(tmp.name)\n            result = subprocess.run(\n                [\"node\", \"--check\", str(tmp_path)],\n                capture_output=True,\n                text=True,\n                timeout=12,\n                check=False,\n            )\n            try:\n                tmp_path.unlink(missing_ok=True)\n            except OSError:\n                pass\n\n            if result.returncode == 0:\n                return True, \"\"\n            err = (result.stderr or result.stdout or \"node --check error\").strip()\n            return False, err\n        except FileNotFoundError:\n            return True, \"\"\n        except Exception as exc:\n            return False, str(exc)\n\n    async def _upload_file(self, file_path: Path) -> None:\n        if not file_path.exists():\n            raise FileNotFoundError(f\"File not found: {file_path}\")\n\n        with file_path.open(\"rb\") as f:\n            async for db in get_session():\n                current_user = await get_user_by_id(db, self.user_id)\n                await upload_user_file(\n                    file=UploadFile(filename=file_path.name, file=f, size=file_path.stat().st_size),\n                    session=db,\n                    current_user=current_user,\n                    storage_service=get_storage_service(),\n                    settings_service=get_settings_service(),\n                )\n                break\n\n    def _load_rows(self, db_path: Path) -> list[dict]:\n        query = \"\"\"\n            SELECT *\n            FROM credit_product_snapshots\n            ORDER BY COALESCE(created_at, generated_at) ASC, id ASC\n            LIMIT 2000\n        \"\"\"\n        with sqlite3.connect(db_path) as conn:\n            conn.row_factory = sqlite3.Row\n            rows = conn.execute(query).fetchall()\n        return [dict(r) for r in rows]\n\n    def _sqlite_path(self, url: str) -> Path:\n        raw = (url or \"\").strip()\n        if raw.startswith(\"sqlite:///\"):\n            return Path(raw.replace(\"sqlite:///\", \"\", 1))\n        return Path(raw)\n\n    def _normalized_filename(self, raw_name: str | None) -> str:\n        filename = (raw_name or \"credit_dashboard_step10.html\").strip() or \"credit_dashboard_step10.html\"\n        if not filename.lower().endswith(\".html\"):\n            filename += \".html\"\n        return re.sub(r\"[^a-zA-Z0-9._-]\", \"_\", filename)\n\n    def _resolve_output_path(self, filename: str) -> Path:\n        flow_id = getattr(self, \"flow_id\", None)\n        safe_flow = str(flow_id).strip().replace(\"/\", \"_\") if flow_id else \"\"\n        base_dir = Path(\"/tmp\")\n        target_dir = base_dir / safe_flow if safe_flow else base_dir\n        target_dir.mkdir(parents=True, exist_ok=True)\n        return target_dir / filename\n\n    def _normalize_cell(self, value):\n        if not isinstance(value, str):\n            return value\n        text = value.strip()\n        if not text:\n            return text\n\n        # Try decoding values that were json-dumped before writing to DB.\n        try:\n            decoded = json.loads(text)\n            if isinstance(decoded, (str, int, float, bool)) or decoded is None:\n                return decoded\n        except Exception:\n            pass\n\n        if len(text) >= 2 and ((text[0] == '\"' and text[-1] == '\"') or (text[0] == \"'\" and text[-1] == \"'\")):\n            return text[1:-1]\n        return text\n\n    def _extract_percent(self, value: str | None):\n        if value is None:\n            return None\n        match = re.search(r\"(\\d+(?:[.,]\\d+)?)\", str(value))\n        return float(match.group(1).replace(\",\", \".\")) if match else None\n\n    def _extract_number(self, value: str | None):\n        if value is None:\n            return None\n        match = re.search(r\"(\\d+)\", str(value).replace(\" \", \"\"))\n        return float(match.group(1)) if match else None\n\n    def _result(self, status: str, errors: list[str] | None = None) -> Data:\n        payload = {\"status\": status, \"errors\": errors or []}\n        self.status = payload\n        return Data(data={\"text\": json.dumps(payload, ensure_ascii=False), **payload})\n"
               },
               "database_url": {
                 "_input_type": "MessageTextInput",
@@ -2766,14 +2843,14 @@
                 "value": [
                   {
                     "args": {
-                      "record_json": {
-                        "description": "Кратко: намерение визуализации (опционально).",
-                        "title": "Chart Intent",
-                        "type": "string"
-                      },
                       "chart_code": {
                         "description": "Полный JS: async function renderDashboard(payload, Plotly, containers). Минимум 2 вызова Plotly.newPlot (chartA/chartB, опционально chartC). Используй payload.traces_rate/traces_amount/summary как приоритет, затем fallback на payload.records/sample_rows. Без markdown. Не в чат.",
                         "title": "Chart Code (JS)",
+                        "type": "string"
+                      },
+                      "record_json": {
+                        "description": "Кратко: намерение визуализации (опционально).",
+                        "title": "Chart Intent",
                         "type": "string"
                       },
                       "snapshot_id": {
@@ -2793,29 +2870,6 @@
                     ]
                   }
                 ]
-              },
-              "chart_code": {
-                "_input_type": "MessageTextInput",
-                "advanced": false,
-                "display_name": "Chart Code (JS)",
-                "dynamic": false,
-                "info": "JavaScript: async function renderDashboard(payload, Plotly, containers). Обязательно: 2+ Plotly.newPlot и fallback, если traces пустые. Используй payload.traces_rate/traces_amount/summary, затем records/sample_rows. Передавать ТОЛЬКО в tool, не в чат.",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "chart_code",
-                "placeholder": "",
-                "required": true,
-                "show": true,
-                "title_case": false,
-                "tool_mode": true,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": ""
               }
             },
             "tool_mode": true,
@@ -2825,31 +2879,57 @@
           "type": "CreditDashboardExportTool"
         },
         "dragging": false,
-        "id": "CreditDashboardCodeExecTool-step10",
+        "id": "CreditDashboardExportTool-YlfC9",
         "measured": {
           "height": 223,
           "width": 320
         },
         "position": {
-          "x": -608,
-          "y": 980
+          "x": -196.9544673493823,
+          "y": 780.133823573553
         },
         "selected": false,
         "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "note-toPLu",
+          "node": {
+            "description": "## Тестовый запрос:\n  - \"Собери HTML-дашборд по данным из БД: три графика в контейнерах chartA/chartB/chartC, не дублируй JS в чат. Сохрани как step10_demo.html.\"\n\nЕще примеры:\n  - Сделай дашборд в стиле risk-view: выдели банки с высоким confidence=low, покажи как менялись max_amount и rate. Добавь цветовую кодировку по confidence. Сохрани как step10_risk_view.html.\n  - Построй дашборд только по двум банкам: Сбер и Т-Банк. Нужны 3 графика: rate trend, amount trend, delta bar (last-first). Сохрани как step10_sber_tbank.html.\n  - Сделай обзор по всей таблице: график распределения max_amount (histogram), boxplot по банкам, и heatmap корреляции числовых полей. Сохрани как step10_distribution.html.",
+            "display_name": "",
+            "documentation": "",
+            "template": {}
+          },
+          "type": "note"
+        },
+        "height": 580,
+        "id": "note-toPLu",
+        "measured": {
+          "height": 580,
+          "width": 378
+        },
+        "position": {
+          "x": -1014.8113886294904,
+          "y": -81.53862471715956
+        },
+        "resizing": false,
+        "selected": false,
+        "type": "noteNode",
+        "width": 378
       }
     ],
     "viewport": {
-      "x": 568.102477584077,
-      "y": 115.17728983626898,
-      "zoom": 0.6156879558631536
+      "x": 765.5488423903879,
+      "y": 179.94556942764973,
+      "zoom": 0.6221916476602585
     }
   },
   "description": "Шаг 10 (продвинутый): агент генерирует JS (renderDashboard), tool валидирует, сохраняет HTML и загружает в Files.",
   "endpoint_name": null,
-  "id": "f1e2a094-7234-4274-b832-47dc852cd3d3",
+  "id": "329dccbe-2a09-4050-a104-7c8d5a1d6097",
   "is_component": false,
   "last_tested_version": "1.5.0.post1",
-  "name": "step_10_dashboard_codegen_export",
+  "name": "Step 10 - Dashboard codegen export",
   "tags": [
     "agents",
     "training",

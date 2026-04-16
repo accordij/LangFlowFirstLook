@@ -286,34 +286,6 @@
         "sourceHandle": "{œdataTypeœ:œChatInputœ,œidœ:œChatInput-RLOpbœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
         "target": "GigaChatAgent-yqz9K",
         "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œGigaChatAgent-yqz9Kœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "RunFlow",
-            "id": "RunFlow-RGcJh",
-            "name": "component_as_tool",
-            "output_types": [
-              "Tool"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "tools",
-            "id": "GigaChatAgent-yqz9K",
-            "inputTypes": [
-              "Tool"
-            ],
-            "type": "other"
-          }
-        },
-        "id": "reactflow__edge-RunFlow-RGcJh{œdataTypeœ:œRunFlowœ,œidœ:œRunFlow-RGcJhœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}-GigaChatAgent-yqz9K{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-yqz9Kœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}",
-        "selected": false,
-        "source": "RunFlow-RGcJh",
-        "sourceHandle": "{œdataTypeœ:œRunFlowœ,œidœ:œRunFlow-RGcJhœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}",
-        "target": "GigaChatAgent-yqz9K",
-        "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-yqz9Kœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
       }
     ],
     "nodes": [
@@ -446,8 +418,8 @@
           "width": 320
         },
         "position": {
-          "x": -28.412235624403337,
-          "y": -568.6282548349184
+          "x": -28.41223562440335,
+          "y": -211.46304823914528
         },
         "positionAbsolute": {
           "x": 35.37082090227182,
@@ -774,69 +746,6 @@
       },
       {
         "data": {
-          "id": "note-ltDV4",
-          "node": {
-            "description": "## Tool Calculator\n\nЧтобы посмотреть проверить как GigaChat вызывает tool (функцию) можете набрать пример\n\n```\nВычисли значение выражения (2+3)*5\n```\n\nРаскройте в `Playground` детали, чтобы посмотреть с какими аргументами произошел вызов",
-            "display_name": "",
-            "documentation": "",
-            "template": {}
-          },
-          "type": "note"
-        },
-        "dragging": false,
-        "height": 324,
-        "id": "note-ltDV4",
-        "measured": {
-          "height": 324,
-          "width": 324
-        },
-        "position": {
-          "x": -377.0977669290411,
-          "y": 260.2168738183958
-        },
-        "positionAbsolute": {
-          "x": -404.0195508494543,
-          "y": 321.1270850607312
-        },
-        "resizing": false,
-        "selected": false,
-        "style": {
-          "height": 324,
-          "width": 324
-        },
-        "type": "noteNode",
-        "width": 324
-      },
-      {
-        "data": {
-          "id": "note-lDEiX",
-          "node": {
-            "description": "# GigaChatAgent\n\nКомпонент обращения к GigaChat, который работает с сообщениями в рамках контекста сессии и имеет возможность вызова функций. Агентские функции тратят большое количество токенов. Гигачат Про и Мах вызывают функции стабильнее, чем Гигачат просто",
-            "display_name": "",
-            "documentation": "",
-            "template": {
-              "backgroundColor": "rose"
-            }
-          },
-          "type": "note"
-        },
-        "dragging": false,
-        "height": 325,
-        "id": "note-lDEiX",
-        "measured": {
-          "height": 325,
-          "width": 325
-        },
-        "position": {
-          "x": 449.19614735616074,
-          "y": -39.48308877419217
-        },
-        "selected": false,
-        "type": "noteNode",
-        "width": 325
-      },
-      {
-        "data": {
           "id": "CalculatorComponent-NzJb0",
           "node": {
             "base_classes": [
@@ -854,7 +763,7 @@
             ],
             "frozen": false,
             "icon": "calculator",
-            "last_updated": "2026-04-15T12:40:53.628Z",
+            "last_updated": "2026-04-16T08:22:23.188Z",
             "legacy": false,
             "lf_version": "1.5.0.post1",
             "metadata": {},
@@ -1395,8 +1304,8 @@
           "width": 320
         },
         "position": {
-          "x": -362.4814295622633,
-          "y": 1061.8689807621429
+          "x": -6.01969036315046,
+          "y": 971.5962026532767
         },
         "selected": false,
         "type": "genericNode"
@@ -1760,8 +1669,8 @@
           "width": 320
         },
         "position": {
-          "x": -362.63374362193474,
-          "y": 1343.1729778416852
+          "x": 16.97486175893866,
+          "y": 1271.4176926782275
         },
         "selected": false,
         "type": "genericNode"
@@ -1804,7 +1713,7 @@
             ],
             "frozen": false,
             "icon": "AIGateway",
-            "last_updated": "2026-04-15T12:40:53.630Z",
+            "last_updated": "2026-04-16T08:22:23.198Z",
             "legacy": false,
             "lf_version": "1.5.0.post1",
             "metadata": {},
@@ -2288,8 +2197,8 @@
           "width": 320
         },
         "position": {
-          "x": -1567.0505540094093,
-          "y": 2629.13557370895
+          "x": -362.05055400940944,
+          "y": 2029.1355737089498
         },
         "selected": false,
         "type": "genericNode"
@@ -2653,8 +2562,8 @@
           "width": 320
         },
         "position": {
-          "x": 34.145904271625426,
-          "y": 1343.5230101693965
+          "x": 409.12513641614674,
+          "y": 1248.6208588241782
         },
         "selected": false,
         "type": "genericNode"
@@ -2868,8 +2777,8 @@
           "width": 320
         },
         "position": {
-          "x": -1156.430854920944,
-          "y": 2710.78919025501
+          "x": 58.56914507905594,
+          "y": 2080.78919025501
         },
         "selected": false,
         "type": "genericNode"
@@ -2904,7 +2813,7 @@
             ],
             "frozen": false,
             "icon": "table",
-            "last_updated": "2026-04-15T12:37:11.551Z",
+            "last_updated": "2026-04-16T08:22:23.360Z",
             "legacy": false,
             "lf_version": "1.5.0.post1",
             "metadata": {},
@@ -3266,8 +3175,8 @@
           "width": 320
         },
         "position": {
-          "x": -745.6183353115487,
-          "y": 2790.7535387725675
+          "x": 488.1807695151955,
+          "y": 2139.356224292335
         },
         "selected": false,
         "type": "genericNode"
@@ -3371,8 +3280,8 @@
           "width": 320
         },
         "position": {
-          "x": -1152.7236194513923,
-          "y": 2387.7458012708285
+          "x": 53.33307485480938,
+          "y": 1795.4161113578439
         },
         "selected": false,
         "type": "genericNode"
@@ -3549,8 +3458,8 @@
           "width": 320
         },
         "position": {
-          "x": 19.86938582448687,
-          "y": 2939.674168427535
+          "x": 1245.2049123256472,
+          "y": 2291.9292375872465
         },
         "selected": false,
         "type": "genericNode"
@@ -3681,8 +3590,8 @@
           "width": 320
         },
         "position": {
-          "x": -383.842112289575,
-          "y": 2937.701538795604
+          "x": 874.4463732295328,
+          "y": 2204.967864102075
         },
         "selected": false,
         "type": "genericNode"
@@ -3709,7 +3618,7 @@
             ],
             "frozen": false,
             "icon": "Workflow",
-            "last_updated": "2026-04-15T12:40:53.631Z",
+            "last_updated": "2026-04-16T08:22:23.200Z",
             "legacy": false,
             "lf_version": "1.5.0.post1",
             "metadata": {},
@@ -4142,7 +4051,7 @@
             ],
             "frozen": false,
             "icon": "file-text",
-            "last_updated": "2026-04-15T12:37:11.417Z",
+            "last_updated": "2026-04-16T08:22:23.202Z",
             "legacy": false,
             "lf_version": "1.5.0.post1",
             "metadata": {},
@@ -5395,10 +5304,10 @@
           "width": 575
         },
         "position": {
-          "x": -1842.519818680445,
-          "y": 2207.7720706431014
+          "x": -538.1544586495411,
+          "y": 1685.1701250970575
         },
-        "selected": false,
+        "selected": true,
         "type": "noteNode"
       },
       {
@@ -5420,8 +5329,8 @@
           "width": 324
         },
         "position": {
-          "x": -735.4094451287339,
-          "y": 970.8800891908193
+          "x": -367.37427283874075,
+          "y": 984.7682088998757
         },
         "resizing": false,
         "selected": false,
@@ -5430,469 +5339,9 @@
       },
       {
         "data": {
-          "id": "RunFlow-RGcJh",
+          "id": "note-ITccl",
           "node": {
-            "base_classes": [
-              "Data",
-              "DataFrame",
-              "Message"
-            ],
-            "beta": true,
-            "conditional_paths": [],
-            "custom_fields": {},
-            "description": "Инструмент позволяет сохранить информацию в файл",
-            "display_name": "Сохранить в файл",
-            "documentation": "https://docs.langflow.org/components-logic#run-flow",
-            "edited": false,
-            "field_order": [
-              "flow_name_selected",
-              "session_id"
-            ],
-            "frozen": false,
-            "icon": "Workflow",
-            "last_updated": "2026-04-15T12:37:11.417Z",
-            "legacy": false,
-            "lf_version": "1.5.0.post1",
-            "metadata": {},
-            "minimized": false,
-            "output_types": [],
-            "outputs": [
-              {
-                "allows_loop": false,
-                "cache": true,
-                "display_name": "Toolset",
-                "group_outputs": false,
-                "hidden": null,
-                "method": "to_toolkit",
-                "name": "component_as_tool",
-                "options": null,
-                "required_inputs": null,
-                "selected": "Tool",
-                "tool_mode": true,
-                "types": [
-                  "Tool"
-                ],
-                "value": "__UNDEFINED__"
-              }
-            ],
-            "pinned": false,
-            "template": {
-              "ChatInput-KLOoy~background_color": {
-                "_input_type": "MessageTextInput",
-                "advanced": true,
-                "display_name": "Chat Input - Background Color",
-                "dynamic": false,
-                "info": "The background color of the icon.",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "ChatInput-KLOoy~background_color",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": ""
-              },
-              "ChatInput-KLOoy~chat_icon": {
-                "_input_type": "MessageTextInput",
-                "advanced": true,
-                "display_name": "Chat Input - Icon",
-                "dynamic": false,
-                "info": "The icon of the message.",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "ChatInput-KLOoy~chat_icon",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": ""
-              },
-              "ChatInput-KLOoy~files": {
-                "_input_type": "FileInput",
-                "advanced": true,
-                "display_name": "Chat Input - Files",
-                "dynamic": false,
-                "fileTypes": [
-                  "txt",
-                  "md",
-                  "mdx",
-                  "csv",
-                  "json",
-                  "yaml",
-                  "yml",
-                  "xml",
-                  "html",
-                  "htm",
-                  "pdf",
-                  "docx",
-                  "py",
-                  "sh",
-                  "sql",
-                  "js",
-                  "ts",
-                  "tsx",
-                  "jpg",
-                  "jpeg",
-                  "png",
-                  "bmp",
-                  "image"
-                ],
-                "file_path": "",
-                "info": "Files to be sent with the message.",
-                "list": true,
-                "list_add_label": "Add More",
-                "name": "ChatInput-KLOoy~files",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "temp_file": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "file",
-                "value": ""
-              },
-              "ChatInput-KLOoy~input_value": {
-                "_input_type": "MultilineInput",
-                "advanced": false,
-                "copy_field": false,
-                "display_name": "Chat Input - Input Text",
-                "dynamic": false,
-                "info": "Message to be passed as input.",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "multiline": true,
-                "name": "ChatInput-KLOoy~input_value",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": true,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": ""
-              },
-              "ChatInput-KLOoy~sender": {
-                "_input_type": "DropdownInput",
-                "advanced": true,
-                "combobox": false,
-                "dialog_inputs": {},
-                "display_name": "Chat Input - Sender Type",
-                "dynamic": false,
-                "info": "Type of sender.",
-                "name": "ChatInput-KLOoy~sender",
-                "options": [
-                  "Machine",
-                  "User"
-                ],
-                "options_metadata": [],
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "toggle": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "User"
-              },
-              "ChatInput-KLOoy~sender_name": {
-                "_input_type": "MessageTextInput",
-                "advanced": true,
-                "display_name": "Chat Input - Sender Name",
-                "dynamic": false,
-                "info": "Name of the sender.",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "ChatInput-KLOoy~sender_name",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "User"
-              },
-              "ChatInput-KLOoy~session_id": {
-                "_input_type": "MessageTextInput",
-                "advanced": true,
-                "display_name": "Chat Input - Session ID",
-                "dynamic": false,
-                "info": "The session ID of the chat. If empty, the current session ID parameter will be used.",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "ChatInput-KLOoy~session_id",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": ""
-              },
-              "ChatInput-KLOoy~should_store_message": {
-                "_input_type": "BoolInput",
-                "advanced": true,
-                "display_name": "Chat Input - Store Messages",
-                "dynamic": false,
-                "info": "Store the message in the history.",
-                "list": false,
-                "list_add_label": "Add More",
-                "name": "ChatInput-KLOoy~should_store_message",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "bool",
-                "value": true
-              },
-              "ChatInput-KLOoy~text_color": {
-                "_input_type": "MessageTextInput",
-                "advanced": true,
-                "display_name": "Chat Input - Text Color",
-                "dynamic": false,
-                "info": "The text color of the name",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "ChatInput-KLOoy~text_color",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": ""
-              },
-              "_type": "Component",
-              "code": {
-                "advanced": true,
-                "dynamic": true,
-                "fileTypes": [],
-                "file_path": "",
-                "info": "",
-                "list": false,
-                "load_from_db": false,
-                "multiline": true,
-                "name": "code",
-                "password": false,
-                "placeholder": "",
-                "required": true,
-                "show": true,
-                "title_case": false,
-                "type": "code",
-                "value": "from typing import Any\n\nfrom loguru import logger\n\nfrom langflow.base.tools.run_flow import RunFlowBaseComponent\nfrom langflow.helpers.flow import run_flow\nfrom langflow.schema.dotdict import dotdict\n\n\nclass RunFlowComponent(RunFlowBaseComponent):\n    display_name = \"Run Flow\"\n    description = (\n        \"Creates a tool component from a Flow that takes all its inputs and runs it. \"\n        \" \\n **Select a Flow to use the tool mode**\"\n    )\n    documentation: str = \"https://docs.langflow.org/components-logic#run-flow\"\n    beta = True\n    name = \"RunFlow\"\n    icon = \"Workflow\"\n\n    inputs = RunFlowBaseComponent._base_inputs\n    outputs = RunFlowBaseComponent._base_outputs\n\n    async def update_build_config(self, build_config: dotdict, field_value: Any, field_name: str | None = None):\n        if field_name == \"flow_name_selected\":\n            build_config[\"flow_name_selected\"][\"options\"] = await self.get_flow_names()\n            missing_keys = [key for key in self.default_keys if key not in build_config]\n            if missing_keys:\n                msg = f\"Missing required keys in build_config: {missing_keys}\"\n                raise ValueError(msg)\n            if field_value is not None:\n                try:\n                    graph = await self.get_graph(field_value)\n                    build_config = self.update_build_config_from_graph(build_config, graph)\n                except Exception as e:\n                    msg = f\"Error building graph for flow {field_value}\"\n                    logger.exception(msg)\n                    raise RuntimeError(msg) from e\n        return build_config\n\n    async def run_flow_with_tweaks(self):\n        tweaks: dict = {}\n\n        flow_name_selected = self._attributes.get(\"flow_name_selected\")\n        parsed_flow_tweak_data = self._attributes.get(\"flow_tweak_data\", {})\n        if not isinstance(parsed_flow_tweak_data, dict):\n            parsed_flow_tweak_data = parsed_flow_tweak_data.dict()\n\n        if parsed_flow_tweak_data != {}:\n            for field in parsed_flow_tweak_data:\n                if \"~\" in field:\n                    [node, name] = field.split(\"~\")\n                    if node not in tweaks:\n                        tweaks[node] = {}\n                    tweaks[node][name] = parsed_flow_tweak_data[field]\n        else:\n            for field in self._attributes:\n                if field not in self.default_keys and \"~\" in field:\n                    [node, name] = field.split(\"~\")\n                    if node not in tweaks:\n                        tweaks[node] = {}\n                    tweaks[node][name] = self._attributes[field]\n\n        return await run_flow(\n            inputs=None,\n            output_type=\"all\",\n            flow_id=None,\n            flow_name=flow_name_selected,\n            tweaks=tweaks,\n            user_id=str(self.user_id),\n            session_id=self.graph.session_id or self.session_id,\n        )\n"
-              },
-              "flow_name_selected": {
-                "_input_type": "DropdownInput",
-                "advanced": false,
-                "combobox": false,
-                "dialog_inputs": {},
-                "display_name": "Flow Name",
-                "dynamic": false,
-                "info": "The name of the flow to run.",
-                "name": "flow_name_selected",
-                "options": [
-                  "Simple Agent",
-                  "Parsing Valute",
-                  "Untitled document",
-                  "LoopFlow",
-                  "Vector Store RAG (InMemory)",
-                  "Simple Agent (1)",
-                  "Save_local_file"
-                ],
-                "options_metadata": [],
-                "placeholder": "",
-                "real_time_refresh": true,
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "toggle": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "Save_local_file"
-              },
-              "session_id": {
-                "_input_type": "MessageInput",
-                "advanced": true,
-                "display_name": "Session ID",
-                "dynamic": false,
-                "info": "The session ID to run the flow in.",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "session_id",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": {
-                  "data": {
-                    "category": "message",
-                    "content_blocks": [],
-                    "duration": null,
-                    "edit": false,
-                    "error": false,
-                    "files": [],
-                    "flow_id": null,
-                    "properties": {
-                      "allow_markdown": false,
-                      "edited": false,
-                      "source": {
-                        "display_name": null,
-                        "id": null,
-                        "source": null
-                      },
-                      "state": "complete",
-                      "targets": []
-                    },
-                    "sender": null,
-                    "sender_name": null,
-                    "session_id": "",
-                    "text": "",
-                    "timestamp": "2025-12-08 04:05:18 UTC"
-                  },
-                  "default_value": "",
-                  "text_key": "text"
-                }
-              },
-              "tools_metadata": {
-                "_input_type": "ToolsInput",
-                "advanced": false,
-                "display_name": "Actions",
-                "dynamic": false,
-                "info": "Modify tool names and descriptions to help agents understand when to use each tool.",
-                "is_list": true,
-                "list_add_label": "Add More",
-                "name": "tools_metadata",
-                "placeholder": "",
-                "real_time_refresh": true,
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "tools",
-                "value": [
-                  {
-                    "args": {
-                      "flow_tweak_data": {
-                        "$ref": "#/$defs/InnerModel"
-                      }
-                    },
-                    "description": "Tool designed to execute the flow 'Save_local_file'. Flow details: Позволяет сохранить информацию в файл.",
-                    "display_description": "Creates a tool component from a Flow that takes all its inputs and runs it.  \n **Select a Flow to use the tool mode**",
-                    "display_name": "message_output",
-                    "name": "save_local_file_tool",
-                    "readonly": false,
-                    "status": true,
-                    "tags": [
-                      "Save_local_file_tool"
-                    ]
-                  }
-                ]
-              }
-            },
-            "tool_mode": true
-          },
-          "showNode": true,
-          "type": "RunFlow"
-        },
-        "dragging": false,
-        "id": "RunFlow-RGcJh",
-        "measured": {
-          "height": 304,
-          "width": 320
-        },
-        "position": {
-          "x": -30.039865362792888,
-          "y": -243.5299402939219
-        },
-        "selected": false,
-        "type": "genericNode"
-      },
-      {
-        "data": {
-          "id": "note-ULCtG",
-          "node": {
-            "description": "# Инструмент записи в файл\n\nсохраняет сообщение в local_file.json, при этом если файл уже сущестует, то создает рядом с припиской (1)",
-            "display_name": "",
-            "documentation": "",
-            "template": {
-              "backgroundColor": "rose"
-            }
-          },
-          "type": "note"
-        },
-        "dragging": false,
-        "height": 324,
-        "id": "note-ULCtG",
-        "measured": {
-          "height": 324,
-          "width": 324
-        },
-        "position": {
-          "x": -386.17022088739486,
-          "y": -257.64445426595967
-        },
-        "resizing": false,
-        "selected": false,
-        "type": "noteNode",
-        "width": 324
-      },
-      {
-        "data": {
-          "id": "note-E4GEi",
-          "node": {
-            "description": "## Парсинг\n\nЧтобы посмотреть проверить как GigaChat вызывает tool (функцию) можете набрать пример\n\n```\nUSD\n```\n",
+            "description": "## Пример запроса, что бы увидеть творческий подход в вызове тулов\n\nПодсчитай на калькуляторе разницу между стоимостью Доллара и Евро в рублях",
             "display_name": "",
             "documentation": "",
             "template": {}
@@ -5900,15 +5349,15 @@
           "type": "note"
         },
         "dragging": false,
-        "height": 324,
-        "id": "note-E4GEi",
+        "height": 327,
+        "id": "note-ITccl",
         "measured": {
-          "height": 324,
+          "height": 327,
           "width": 324
         },
         "position": {
-          "x": -384.78804753839074,
-          "y": 632.4678117534631
+          "x": -373.16369744455835,
+          "y": 576.8098692967801
         },
         "resizing": false,
         "selected": false,
@@ -5917,9 +5366,9 @@
       }
     ],
     "viewport": {
-      "x": 752.3643302451713,
-      "y": 77.2492681125969,
-      "zoom": 0.2
+      "x": 671.028436004581,
+      "y": -1272.3776841836511,
+      "zoom": 0.8000001011198354
     }
   },
   "description": "Агент GigaChat, который умеет вызывать функции и работает с контекстом в рамках сессии",
